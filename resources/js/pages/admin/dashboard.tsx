@@ -1,123 +1,123 @@
-import { Head } from "@inertiajs/react";
+import { Head } from '@inertiajs/react';
 
 const statsOverview = [
     {
-        label: "Total Anggota",
-        value: "12.480",
-        change: "+124",
-        icon: "👥",
-        bg: "bg-brand-primary-light",
+        label: 'Total Anggota',
+        value: '12.480',
+        change: '+124',
+        icon: '👥',
+        bg: 'bg-brand-primary-light',
     },
     {
-        label: "Berita Dipublikasi",
-        value: "847",
-        change: "+23",
-        icon: "📰",
-        bg: "bg-accent-cyan-subtle",
+        label: 'Berita Dipublikasi',
+        value: '847',
+        change: '+23',
+        icon: '📰',
+        bg: 'bg-accent-cyan-subtle',
     },
     {
-        label: "Kegiatan Aktif",
-        value: "56",
-        change: "+8",
-        icon: "📋",
-        bg: "bg-status-success-bg",
+        label: 'Kegiatan Aktif',
+        value: '56',
+        change: '+8',
+        icon: '📋',
+        bg: 'bg-status-success-bg',
     },
     {
-        label: "KTA Pending",
-        value: "8",
-        change: "",
-        icon: "🪪",
-        bg: "bg-status-warning-bg",
+        label: 'KTA Pending',
+        value: '8',
+        change: '',
+        icon: '🪪',
+        bg: 'bg-status-warning-bg',
     },
 ];
 
 const beritaTerkini = [
     {
-        judul: "Konferensi MWC NU Rampungkan Pembentukan Pengurus Ranting",
-        status: "Diterbitkan",
-        tanggal: "14 Apr 2025",
+        judul: 'Konferensi MWC NU Rampungkan Pembentukan Pengurus Ranting',
+        status: 'Diterbitkan',
+        tanggal: '14 Apr 2025',
     },
     {
-        judul: "Program Dakwah Digital: Kanal Youtube Resmi Kajian Kitab Kuning",
-        status: "Diterbitkan",
-        tanggal: "12 Apr 2025",
+        judul: 'Program Dakwah Digital: Kanal Youtube Resmi Kajian Kitab Kuning',
+        status: 'Diterbitkan',
+        tanggal: '12 Apr 2025',
     },
     {
-        judul: "LAZISNU Distribusikan Zakat Fitrah kepada 850 Mustahik",
-        status: "Diterbitkan",
-        tanggal: "10 Apr 2025",
+        judul: 'LAZISNU Distribusikan Zakat Fitrah kepada 850 Mustahik',
+        status: 'Diterbitkan',
+        tanggal: '10 Apr 2025',
     },
     {
-        judul: "Pelatihan Digital Marketing bagi Pelaku UMKM",
-        status: "Draf",
-        tanggal: "08 Apr 2025",
+        judul: 'Pelatihan Digital Marketing bagi Pelaku UMKM',
+        status: 'Draf',
+        tanggal: '08 Apr 2025',
     },
     {
-        judul: "IPNU-IPPNU Gelar Makesta Raya",
-        status: "Diterbitkan",
-        tanggal: "05 Apr 2025",
+        judul: 'IPNU-IPPNU Gelar Makesta Raya',
+        status: 'Diterbitkan',
+        tanggal: '05 Apr 2025',
     },
 ];
 
 const anggotaTerkini = [
     {
-        nama: "Muhammad Rizki",
-        banom: "IPNU",
-        status: "Terverifikasi",
-        foto: "MR",
+        nama: 'Muhammad Rizki',
+        banom: 'IPNU',
+        status: 'Terverifikasi',
+        foto: 'MR',
     },
     {
-        nama: "Siti Nurhaliza",
-        banom: "IPPNU",
-        status: "Menunggu Verifikasi",
-        foto: "SN",
+        nama: 'Siti Nurhaliza',
+        banom: 'IPPNU',
+        status: 'Menunggu Verifikasi',
+        foto: 'SN',
     },
     {
-        nama: "Abdullah Mansyur",
-        banom: "GP Ansor",
-        status: "Terverifikasi",
-        foto: "AM",
+        nama: 'Abdullah Mansyur',
+        banom: 'GP Ansor',
+        status: 'Terverifikasi',
+        foto: 'AM',
     },
     {
-        nama: "Fatimah Azzahra",
-        banom: "Fatayat NU",
-        status: "Menunggu Verifikasi",
-        foto: "FA",
+        nama: 'Fatimah Azzahra',
+        banom: 'Fatayat NU',
+        status: 'Menunggu Verifikasi',
+        foto: 'FA',
     },
     {
-        nama: "Hasanuddin Ali",
-        banom: "Banser",
-        status: "Terverifikasi",
-        foto: "HA",
+        nama: 'Hasanuddin Ali',
+        banom: 'Banser',
+        status: 'Terverifikasi',
+        foto: 'HA',
     },
 ];
 
 const navSections = [
     {
-        title: "Ikhtisar",
-        items: [{ label: "Overview", icon: "📊", active: true }],
+        title: 'Ikhtisar',
+        items: [{ label: 'Overview', icon: '📊', active: true }],
     },
     {
-        title: "Konten & Publikasi",
+        title: 'Konten & Publikasi',
         items: [
-            { label: "Warta & Berita", icon: "📰", active: false },
-            { label: "Kegiatan & Agenda", icon: "📅", active: false },
+            { label: 'Warta & Berita', icon: '📰', active: false },
+            { label: 'Kegiatan & Agenda', icon: '📅', active: false },
         ],
     },
     {
-        title: "Keanggotaan & Kader",
+        title: 'Keanggotaan & Kader',
         items: [
-            { label: "Anggota & Kader", icon: "👥", active: false, badge: "" },
-            { label: "Verifikasi KTA", icon: "✅", active: false, badge: "8" },
+            { label: 'Anggota & Kader', icon: '👥', active: false, badge: '' },
+            { label: 'Verifikasi KTA', icon: '✅', active: false, badge: '8' },
         ],
     },
     {
-        title: "Struktural",
-        items: [{ label: "6 Badan Otonom", icon: "🏢", active: false }],
+        title: 'Struktural',
+        items: [{ label: '6 Badan Otonom', icon: '🏢', active: false }],
     },
     {
-        title: "Administrasi",
-        items: [{ label: "Pengaturan Sekretariat", icon: "⚙️", active: false }],
+        title: 'Administrasi',
+        items: [{ label: 'Pengaturan Sekretariat', icon: '⚙️', active: false }],
     },
 ];
 
@@ -139,15 +139,15 @@ export default function AdminDashboard() {
     return (
         <>
             <Head title="Admin Dashboard" />
-            <div className="min-h-screen flex bg-surface-warm">
+            <div className="bg-surface-warm flex min-h-screen">
                 {/* Sidebar */}
-                <aside className="fixed top-0 left-0 h-screen w-64 border-r bg-surface-card border-border-subtle shadow-sm flex flex-col justify-between p-4 z-30">
-                    <div className="flex flex-col h-full overflow-y-auto pr-1">
+                <aside className="bg-surface-card border-border-subtle fixed top-0 left-0 z-30 flex h-screen w-64 flex-col justify-between border-r p-4 shadow-sm">
+                    <div className="flex h-full flex-col overflow-y-auto pr-1">
                         {/* Brand */}
-                        <div className="flex items-center gap-4 pb-4 border-b border-border-light">
-                            <div className="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+                        <div className="border-border-light flex items-center gap-4 border-b pb-4">
+                            <div className="bg-brand-primary flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg text-white shadow-sm">
                                 <svg
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="2"
@@ -158,7 +158,7 @@ export default function AdminDashboard() {
                                 </svg>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-title-lg font-bold text-brand-primary tracking-tight">
+                                <span className="text-title-lg text-brand-primary font-bold tracking-tight">
                                     MWC NU
                                 </span>
                                 <span className="text-caption text-text-secondary">
@@ -170,11 +170,11 @@ export default function AdminDashboard() {
                         {/* Quick Action */}
                         <div className="pt-4 pb-2">
                             <button
-                                className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-brand-primary text-white text-label-md font-semibold hover:bg-brand-primary-hover active:scale-[0.98] transition-all shadow-sm"
+                                className="bg-brand-primary text-label-md hover:bg-brand-primary-hover flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2 font-semibold text-white shadow-sm transition-all active:scale-[0.98]"
                                 type="button"
                             >
                                 <svg
-                                    className="w-4 h-4"
+                                    className="h-4 w-4"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="2"
@@ -190,14 +190,14 @@ export default function AdminDashboard() {
                         <div className="mt-2 flex-1">
                             {typedNavSections.map((section, si) => (
                                 <div key={si} className="mt-4">
-                                    <p className="px-2 text-caption text-text-muted tracking-wider uppercase mb-2">
+                                    <p className="text-caption text-text-muted mb-2 px-2 tracking-wider uppercase">
                                         {section.title}
                                     </p>
                                     <nav className="space-y-1">
                                         {section.items.map((item, ii) => (
                                             <a
                                                 key={ii}
-                                                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-body-sm transition-colors duration-150 ${item.active ? "bg-brand-primary-light text-brand-primary font-semibold" : "text-text-secondary hover:text-text-primary hover:bg-brand-primary-light"}`}
+                                                className={`text-body-sm flex items-center gap-2 rounded-lg px-4 py-2 transition-colors duration-150 ${item.active ? 'bg-brand-primary-light text-brand-primary font-semibold' : 'text-text-secondary hover:text-text-primary hover:bg-brand-primary-light'}`}
                                                 href="#"
                                             >
                                                 <span className="text-base">
@@ -207,7 +207,7 @@ export default function AdminDashboard() {
                                                     {item.label}
                                                 </span>
                                                 {item.badge && (
-                                                    <span className="px-2 py-0.5 rounded-full text-caption bg-status-warning-bg text-status-warning border border-status-warning/30 font-semibold">
+                                                    <span className="text-caption bg-status-warning-bg text-status-warning border-status-warning/30 rounded-full border px-2 py-0.5 font-semibold">
                                                         {item.badge}
                                                     </span>
                                                 )}
@@ -219,13 +219,13 @@ export default function AdminDashboard() {
                         </div>
 
                         {/* Bottom User */}
-                        <div className="mt-4 pt-4 border-t border-border-light">
+                        <div className="border-border-light mt-4 border-t pt-4">
                             <div className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-full bg-brand-primary text-white flex items-center justify-center font-bold text-xs">
+                                <div className="bg-brand-primary flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold text-white">
                                     AD
                                 </div>
-                                <div className="flex-1 min-w-0">
-                                    <p className="text-label-sm text-text-primary font-semibold truncate">
+                                <div className="min-w-0 flex-1">
+                                    <p className="text-label-sm text-text-primary truncate font-semibold">
                                         Admin Sekretariat
                                     </p>
                                     <p className="text-caption text-text-muted">
@@ -238,24 +238,24 @@ export default function AdminDashboard() {
                 </aside>
 
                 {/* Main Area */}
-                <div className="flex-1 ml-64">
+                <div className="ml-64 flex-1">
                     {/* Top Bar */}
-                    <header className="bg-surface-card border-b border-border-light shadow-sm sticky top-0 z-20 h-16 flex items-center justify-between px-8">
+                    <header className="bg-surface-card border-border-light sticky top-0 z-20 flex h-16 items-center justify-between border-b px-8 shadow-sm">
                         <div className="flex items-center gap-4">
                             <h1 className="text-title-lg text-text-primary font-semibold">
                                 Overview Dashboard
                             </h1>
-                            <span className="text-caption text-text-muted bg-surface-tint px-2 py-0.5 rounded-full">
+                            <span className="text-caption text-text-muted bg-surface-tint rounded-full px-2 py-0.5">
                                 Periode: Mei 2025
                             </span>
                         </div>
                         <div className="flex items-center gap-4">
                             <button
-                                className="relative p-2 text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light rounded-lg transition-colors"
+                                className="text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light relative rounded-lg p-2 transition-colors"
                                 title="Notifikasi"
                             >
                                 <svg
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="2"
@@ -263,9 +263,9 @@ export default function AdminDashboard() {
                                 >
                                     <path d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                                 </svg>
-                                <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-accent-lime rounded-full ring-2 ring-surface-card"></span>
+                                <span className="bg-accent-lime ring-surface-card absolute top-1.5 right-1.5 h-2 w-2 rounded-full ring-2"></span>
                             </button>
-                            <div className="w-8 h-8 rounded-full bg-brand-primary text-white flex items-center justify-center font-bold text-xs">
+                            <div className="bg-brand-primary flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white">
                                 AD
                             </div>
                         </div>
@@ -274,15 +274,15 @@ export default function AdminDashboard() {
                     {/* Content */}
                     <main className="p-8">
                         {/* Stats Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                             {statsOverview.map((stat, i) => (
                                 <div
                                     key={i}
-                                    className="bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                                    className="bg-surface-card border-border-subtle rounded-xl border p-6 shadow-sm transition-shadow hover:shadow-md"
                                 >
-                                    <div className="flex items-center justify-between mb-4">
+                                    <div className="mb-4 flex items-center justify-between">
                                         <div
-                                            className={`w-12 h-12 rounded-xl ${stat.bg} flex items-center justify-center text-xl`}
+                                            className={`h-12 w-12 rounded-xl ${stat.bg} flex items-center justify-center text-xl`}
                                         >
                                             {stat.icon}
                                         </div>
@@ -292,7 +292,7 @@ export default function AdminDashboard() {
                                             </span>
                                         )}
                                     </div>
-                                    <span className="text-headline-md font-display text-text-primary font-bold block">
+                                    <span className="text-headline-md font-display text-text-primary block font-bold">
                                         {stat.value}
                                     </span>
                                     <span className="text-label-md text-text-secondary mt-1 block">
@@ -302,10 +302,10 @@ export default function AdminDashboard() {
                             ))}
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
                             {/* Warta & Berita */}
-                            <section className="lg:col-span-8 bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm">
-                                <div className="flex items-center justify-between mb-6">
+                            <section className="bg-surface-card border-border-subtle rounded-xl border p-6 shadow-sm lg:col-span-8">
+                                <div className="mb-6 flex items-center justify-between">
                                     <h2 className="text-title-lg text-text-primary font-semibold">
                                         Warta & Berita Terkini
                                     </h2>
@@ -319,17 +319,17 @@ export default function AdminDashboard() {
                                 <div className="overflow-x-auto">
                                     <table className="w-full">
                                         <thead>
-                                            <tr className="border-b border-border-subtle">
-                                                <th className="text-left py-3 px-4 text-label-sm text-text-secondary font-semibold uppercase tracking-wider">
+                                            <tr className="border-border-subtle border-b">
+                                                <th className="text-label-sm text-text-secondary px-4 py-3 text-left font-semibold tracking-wider uppercase">
                                                     Judul
                                                 </th>
-                                                <th className="text-left py-3 px-4 text-label-sm text-text-secondary font-semibold uppercase tracking-wider">
+                                                <th className="text-label-sm text-text-secondary px-4 py-3 text-left font-semibold tracking-wider uppercase">
                                                     Status
                                                 </th>
-                                                <th className="text-left py-3 px-4 text-label-sm text-text-secondary font-semibold uppercase tracking-wider">
+                                                <th className="text-label-sm text-text-secondary px-4 py-3 text-left font-semibold tracking-wider uppercase">
                                                     Tanggal
                                                 </th>
-                                                <th className="text-left py-3 px-4 text-label-sm text-text-secondary font-semibold uppercase tracking-wider">
+                                                <th className="text-label-sm text-text-secondary px-4 py-3 text-left font-semibold tracking-wider uppercase">
                                                     Aksi
                                                 </th>
                                             </tr>
@@ -338,22 +338,22 @@ export default function AdminDashboard() {
                                             {beritaTerkini.map((item, i) => (
                                                 <tr
                                                     key={i}
-                                                    className="border-b border-border-light hover:bg-surface-tint transition-colors"
+                                                    className="border-border-light hover:bg-surface-tint border-b transition-colors"
                                                 >
-                                                    <td className="py-4 px-4 text-body-sm text-text-primary font-medium max-w-[300px] truncate">
+                                                    <td className="text-body-sm text-text-primary max-w-[300px] truncate px-4 py-4 font-medium">
                                                         {item.judul}
                                                     </td>
-                                                    <td className="py-4 px-4">
+                                                    <td className="px-4 py-4">
                                                         <span
-                                                            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-medium ${item.status === "Diterbitkan" ? "bg-status-success-bg text-status-success border border-brand-secondary" : "bg-status-warning-bg text-status-warning border border-status-warning/30"}`}
+                                                            className={`text-label-sm inline-flex items-center gap-1 rounded-full px-2 py-0.5 font-medium ${item.status === 'Diterbitkan' ? 'bg-status-success-bg text-status-success border-brand-secondary border' : 'bg-status-warning-bg text-status-warning border-status-warning/30 border'}`}
                                                         >
                                                             {item.status}
                                                         </span>
                                                     </td>
-                                                    <td className="py-4 px-4 text-body-sm text-text-secondary">
+                                                    <td className="text-body-sm text-text-secondary px-4 py-4">
                                                         {item.tanggal}
                                                     </td>
-                                                    <td className="py-4 px-4">
+                                                    <td className="px-4 py-4">
                                                         <button className="text-brand-primary text-label-sm hover:underline">
                                                             Edit
                                                         </button>
@@ -366,13 +366,13 @@ export default function AdminDashboard() {
                             </section>
 
                             {/* Verifikasi KTA Pending */}
-                            <aside className="lg:col-span-4 space-y-6">
-                                <div className="bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm">
-                                    <div className="flex items-center justify-between mb-4">
+                            <aside className="space-y-6 lg:col-span-4">
+                                <div className="bg-surface-card border-border-subtle rounded-xl border p-6 shadow-sm">
+                                    <div className="mb-4 flex items-center justify-between">
                                         <h3 className="text-title-lg text-text-primary font-semibold">
                                             Verifikasi KTA
                                         </h3>
-                                        <span className="px-2 py-0.5 rounded-full text-caption bg-status-warning-bg text-status-warning border border-status-warning/30 font-semibold">
+                                        <span className="text-caption bg-status-warning-bg text-status-warning border-status-warning/30 rounded-full border px-2 py-0.5 font-semibold">
                                             8 Pending
                                         </span>
                                     </div>
@@ -380,13 +380,13 @@ export default function AdminDashboard() {
                                         {anggotaTerkini.map((item, i) => (
                                             <div
                                                 key={i}
-                                                className="flex items-center gap-3 p-3 bg-surface-tint border border-border-light rounded-lg"
+                                                className="bg-surface-tint border-border-light flex items-center gap-3 rounded-lg border p-3"
                                             >
-                                                <div className="w-9 h-9 rounded-full bg-brand-primary-light border border-brand-primary/20 flex items-center justify-center text-brand-primary font-bold text-xs shrink-0">
+                                                <div className="bg-brand-primary-light border-brand-primary/20 text-brand-primary flex h-9 w-9 shrink-0 items-center justify-center rounded-full border text-xs font-bold">
                                                     {item.foto}
                                                 </div>
-                                                <div className="flex-1 min-w-0">
-                                                    <p className="text-label-sm text-text-primary font-semibold truncate">
+                                                <div className="min-w-0 flex-1">
+                                                    <p className="text-label-sm text-text-primary truncate font-semibold">
                                                         {item.nama}
                                                     </p>
                                                     <p className="text-caption text-text-muted">
@@ -394,7 +394,7 @@ export default function AdminDashboard() {
                                                     </p>
                                                 </div>
                                                 <span
-                                                    className={`text-[10px] px-2 py-0.5 rounded-full font-medium shrink-0 ${item.status === "Terverifikasi" ? "bg-status-success-bg text-status-success" : "bg-status-warning-bg text-status-warning"}`}
+                                                    className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${item.status === 'Terverifikasi' ? 'bg-status-success-bg text-status-success' : 'bg-status-warning-bg text-status-warning'}`}
                                                 >
                                                     {item.status}
                                                 </span>
@@ -402,12 +402,12 @@ export default function AdminDashboard() {
                                         ))}
                                     </div>
                                     <a
-                                        className="mt-4 w-full py-2 border border-brand-primary text-brand-primary hover:bg-brand-primary-light rounded-lg text-center text-label-sm font-semibold transition-colors flex items-center justify-center gap-1"
+                                        className="border-brand-primary text-brand-primary hover:bg-brand-primary-light text-label-sm mt-4 flex w-full items-center justify-center gap-1 rounded-lg border py-2 text-center font-semibold transition-colors"
                                         href="#"
                                     >
                                         <span>Lihat Semua</span>
                                         <svg
-                                            className="w-3.5 h-3.5"
+                                            className="h-3.5 w-3.5"
                                             fill="none"
                                             stroke="currentColor"
                                             strokeWidth="2"
@@ -419,32 +419,32 @@ export default function AdminDashboard() {
                                 </div>
 
                                 {/* Quick Actions */}
-                                <div className="bg-surface-card border border-border-subtle rounded-xl p-6 shadow-sm">
-                                    <h3 className="text-title-lg text-text-primary font-semibold mb-4">
+                                <div className="bg-surface-card border-border-subtle rounded-xl border p-6 shadow-sm">
+                                    <h3 className="text-title-lg text-text-primary mb-4 font-semibold">
                                         Aksi Cepat
                                     </h3>
                                     <div className="space-y-2">
                                         {[
                                             {
-                                                label: "Publikasi Berita Baru",
-                                                icon: "✏️",
+                                                label: 'Publikasi Berita Baru',
+                                                icon: '✏️',
                                             },
                                             {
-                                                label: "Kelola Kegiatan",
-                                                icon: "📅",
+                                                label: 'Kelola Kegiatan',
+                                                icon: '📅',
                                             },
                                             {
-                                                label: "Verifikasi Anggota",
-                                                icon: "✅",
+                                                label: 'Verifikasi Anggota',
+                                                icon: '✅',
                                             },
                                             {
-                                                label: "Export Laporan",
-                                                icon: "📊",
+                                                label: 'Export Laporan',
+                                                icon: '📊',
                                             },
                                         ].map((item, i) => (
                                             <button
                                                 key={i}
-                                                className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-surface-tint text-body-sm text-text-secondary hover:text-brand-primary transition-colors text-left"
+                                                className="hover:bg-surface-tint text-body-sm text-text-secondary hover:text-brand-primary flex w-full items-center gap-3 rounded-lg p-3 text-left transition-colors"
                                             >
                                                 <span className="text-lg">
                                                     {item.icon}

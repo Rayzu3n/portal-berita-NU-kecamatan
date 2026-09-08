@@ -5,42 +5,44 @@
 
 @theme {
     /* === Typography === */
-    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
+    --font-sans:
+        'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
     --font-display: 'Newsreader', ui-serif, Georgia, serif;
 
     /* === Brand Colors === */
-    --color-brand-primary: #1C775A;
-    --color-brand-primary-hover: #165F48;
-    --color-brand-primary-light: #E8F4F0;
-    --color-brand-secondary: #77DD77;
-    --color-brand-secondary-hover: #5FC85F;
-    --color-accent-cyan: #94DFE0;
-    --color-accent-cyan-subtle: #EBF8F8;
-    --color-accent-lime: #BFFF00;
+    --color-brand-primary: #1c775a;
+    --color-brand-primary-hover: #165f48;
+    --color-brand-primary-light: #e8f4f0;
+    --color-brand-secondary: #77dd77;
+    --color-brand-secondary-hover: #5fc85f;
+    --color-accent-cyan: #94dfe0;
+    --color-accent-cyan-subtle: #ebf8f8;
+    --color-accent-lime: #bfff00;
 
     /* === Surface Colors === */
     --color-surface: #fafaed;
-    --color-surface-card: #FFFFFF;
-    --color-surface-tint: #F4F7F5;
-    --color-surface-warm: #FAFAFA;
+    --color-surface-card: #ffffff;
+    --color-surface-tint: #f4f7f5;
+    --color-surface-warm: #fafafa;
 
     /* === Text Colors === */
-    --color-text-primary: #1A201C;
-    --color-text-secondary: #5B635E;
-    --color-text-muted: #7B847F;
+    --color-text-primary: #1a201c;
+    --color-text-secondary: #5b635e;
+    --color-text-muted: #7b847f;
 
     /* === Border Colors === */
-    --color-border-subtle: #CFD0C3;
-    --color-border-light: #E2E4DC;
-    --color-border-focus: #1C775A;
+    --color-border-subtle: #cfd0c3;
+    --color-border-light: #e2e4dc;
+    --color-border-focus: #1c775a;
 
     /* === Status Colors === */
-    --color-status-success: #1E7E34;
-    --color-status-success-bg: #E9F7EF;
-    --color-status-warning: #B7791F;
-    --color-status-warning-bg: #FEF9E7;
-    --color-status-danger: #C53030;
-    --color-status-danger-bg: #FDE8E8;
+    --color-status-success: #1e7e34;
+    --color-status-success-bg: #e9f7ef;
+    --color-status-warning: #b7791f;
+    --color-status-warning-bg: #fef9e7;
+    --color-status-danger: #c53030;
+    --color-status-danger-bg: #fde8e8;
 
     /* === Spacing === */
     --spacing-space-8: 8px;
@@ -90,24 +92,24 @@
 /* === Dark Mode Colors === */
 .dark {
     --color-surface: #111512;
-    --color-surface-card: #1C221F;
-    --color-surface-tint: #161B18;
-    --color-surface-warm: #0F1311;
-    --color-text-primary: #F2F5F0;
-    --color-text-secondary: #B8C1BB;
-    --color-text-muted: #87928B;
-    --color-border-subtle: #34403A;
-    --color-border-light: #2A3530;
-    --color-brand-primary: #1C775A;
-    --color-brand-primary-hover: #24A06E;
-    --color-brand-primary-light: #1A3028;
-    --color-brand-secondary: #77DD77;
-    --color-brand-secondary-hover: #8AE88A;
-    --color-accent-cyan: #94DFE0;
-    --color-accent-cyan-subtle: #162B2C;
-    --color-status-success-bg: #0F2A18;
-    --color-status-warning-bg: #2A2210;
-    --color-status-danger-bg: #2A1010;
+    --color-surface-card: #1c221f;
+    --color-surface-tint: #161b18;
+    --color-surface-warm: #0f1311;
+    --color-text-primary: #f2f5f0;
+    --color-text-secondary: #b8c1bb;
+    --color-text-muted: #87928b;
+    --color-border-subtle: #34403a;
+    --color-border-light: #2a3530;
+    --color-brand-primary: #1c775a;
+    --color-brand-primary-hover: #24a06e;
+    --color-brand-primary-light: #1a3028;
+    --color-brand-secondary: #77dd77;
+    --color-brand-secondary-hover: #8ae88a;
+    --color-accent-cyan: #94dfe0;
+    --color-accent-cyan-subtle: #162b2c;
+    --color-status-success-bg: #0f2a18;
+    --color-status-warning-bg: #2a2210;
+    --color-status-danger-bg: #2a1010;
 }
 
 /* === Base Styles === */
