@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Profil &amp; KTA Digital - Portal Anggota MWC NU</title>
+<!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Humanist Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim from System Guidance -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "text-muted": "#7B847F",
+            "surface-tint": "#056c4f",
+            "tertiary": "#005b5c",
+            "surface-warm": "#FAFAFA",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#a4f0f1",
+            "brand-primary-light": "#E8F4F0",
+            "surface-card": "#FFFFFF",
+            "surface-container-high": "#e8e9dc",
+            "status-success-bg": "#E9F7EF",
+            "primary-fixed": "#9ff4cf",
+            "on-secondary-fixed-variant": "#005314",
+            "on-tertiary-fixed": "#002020",
+            "surface-dim": "#dadbce",
+            "accent-cyan": "#94DFE0",
+            "on-primary": "#ffffff",
+            "accent-cyan-subtle": "#EBF8F8",
+            "surface": "#fafaed",
+            "status-warning": "#B7791F",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed-dim": "#77dd77",
+            "on-surface-variant": "#3f4944",
+            "on-tertiary-fixed-variant": "#004f51",
+            "background": "#fafaed",
+            "brand-primary": "#1C775A",
+            "on-tertiary-container": "#acf7f8",
+            "text-secondary": "#5B635E",
+            "status-success": "#1E7E34",
+            "brand-primary-hover": "#165F48",
+            "outline": "#6f7a73",
+            "brand-secondary": "#77DD77",
+            "surface-bright": "#fafaed",
+            "surface-container-lowest": "#ffffff",
+            "border-light": "#E2E4DC",
+            "surface-container-low": "#f4f5e7",
+            "on-primary-fixed-variant": "#00513b",
+            "secondary-fixed": "#92fa90",
+            "status-danger": "#C53030",
+            "inverse-on-surface": "#f1f2e4",
+            "surface-container-highest": "#e3e3d6",
+            "error-container": "#ffdad6",
+            "text-primary": "#1A201C",
+            "secondary-container": "#92fa90",
+            "on-primary-fixed": "#002116",
+            "surface-container": "#eeefe1",
+            "tertiary-fixed-dim": "#88d3d4",
+            "surface-variant": "#e3e3d6",
+            "outline-variant": "#bec9c2",
+            "on-surface": "#1a1c14",
+            "surface-base": "#FFFFFF",
+            "brand-secondary-hover": "#5FC85F",
+            "primary": "#005d44",
+            "secondary": "#006e1d",
+            "inverse-primary": "#83d7b4",
+            "primary-fixed-dim": "#83d7b4",
+            "on-secondary-container": "#007520",
+            "tertiary-container": "#237475",
+            "on-background": "#1a1c14",
+            "on-secondary-fixed": "#002204",
+            "on-error": "#ffffff",
+            "border-focus": "#1C775A",
+            "status-danger-bg": "#FDE8E8",
+            "primary-container": "#1c775a",
+            "inverse-surface": "#2f3128",
+            "on-primary-container": "#a6fbd7",
+            "error": "#ba1a1a",
+            "status-warning-bg": "#FEF9E7",
+            "on-error-container": "#93000a",
+            "border-subtle": "#CFD0C3",
+            "accent-lime": "#BFFF00"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-24": "24px",
+            "space-32": "32px",
+            "container-max-admin": "1440px",
+            "space-80": "80px",
+            "space-56": "56px",
+            "gutter-desktop": "32px",
+            "space-40": "40px",
+            "space-16": "16px",
+            "space-64": "64px",
+            "container-max-public": "1280px",
+            "gutter-tablet": "24px",
+            "space-96": "96px",
+            "space-8": "8px",
+            "gutter-mobile": "16px",
+            "space-48": "48px"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Newsreader"],
+            "caption": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Newsreader"],
+            "headline-lg": ["Newsreader"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Newsreader"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Newsreader"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-md-mobile": ["Newsreader"],
+            "display-hero-mobile": ["Newsreader"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Material symbol base style */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle geometric grid background pattern for physical archival depth */
+    .bg-archival-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(207, 208, 195, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(207, 208, 195, 0.2) 1px, transparent 1px);
+    }
+    /* Custom subtle pattern for KTA card */
+    .bg-kta-islamic {
+      background: radial-gradient(circle at 85% 15%, rgba(148, 223, 224, 0.25) 0%, transparent 45%),
+                  radial-gradient(circle at 10% 90%, rgba(119, 221, 119, 0.18) 0%, transparent 40%),
+                  linear-gradient(135deg, #1C775A 0%, #114B38 100%);
+    }
+    /* Prevent iOS horizontal scroll bouncy bugs */
+    body {
+      touch-action: pan-y;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-surface text-text-primary min-h-screen flex justify-center selection:bg-brand-primary-light selection:text-brand-primary">
+<!-- Mobile Screen Frame Constraint (Standard Mobile Viewport 390px, responsive across 360-430px) -->
+<div class="w-full max-w-[430px] min-h-screen bg-surface flex flex-col relative pb-28 shadow-xl border-x border-border-light/60">
+<!-- ========================================================================= -->
+<!-- 1. COMPACT TOP APP BAR (Shared Anchor: No top/bottom border lines)        -->
+<!-- ========================================================================= -->
+<header class="sticky top-0 z-40 bg-surface-card/95 backdrop-blur-md px-gutter-mobile py-space-8 flex flex-col shadow-sm">
+<div class="flex items-center justify-between h-12">
+<div class="flex items-center gap-space-8">
+<button aria-label="Kembali" class="w-10 h-10 -ml-1 rounded-lg flex items-center justify-center text-brand-primary hover:bg-brand-primary-light transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-brand-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[17px] material-symbols-fill">verified</span>
+</div>
+<div>
+<h1 class="font-title-md text-title-md text-brand-primary font-bold leading-tight tracking-tight">Profil &amp; KTA Digital</h1>
+</div>
+</div>
+</div>
+<!-- Trailing Actions: Notification & Avatar Initial Badge -->
+<div class="flex items-center gap-space-8">
+<button aria-label="Notifikasi" class="w-10 h-10 rounded-lg flex items-center justify-center text-text-secondary hover:bg-brand-primary-light hover:text-brand-primary transition-colors duration-150 relative" type="button">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-accent-lime ring-2 ring-surface-card animate-pulse"></span>
+</button>
+<div class="relative w-9 h-9 rounded-full bg-brand-primary-light border border-border-subtle flex items-center justify-center font-label-sm text-label-sm font-bold text-brand-primary">
+            AF
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-status-success border-2 border-surface-card"></span>
+</div>
+</div>
+</div>
+<!-- Sub-headline / Jurisdictional Context Breadcrumb -->
+<div class="px-1 pt-0.5 pb-1 flex items-center gap-1.5 text-text-secondary">
+<span class="material-symbols-outlined text-[13px] text-brand-primary">apartment</span>
+<span class="font-caption text-caption tracking-wide text-text-secondary">Portal Anggota MWC NU • PAC GP Ansor</span>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CANVAS (Strict 8px rhythm, 16px lateral padding)             -->
+<!-- ========================================================================= -->
+<main class="flex-1 px-gutter-mobile pt-space-16 space-y-space-24">
+<!-- ======================================================================= -->
+<!-- 2. MEMBER HEADER CARD (Profile Summary)                                 -->
+<!-- ======================================================================= -->
+<section class="bg-surface-card rounded-xl border border-border-subtle p-space-16 shadow-[0_1px_3px_0_rgba(28,119,90,0.04)] relative overflow-hidden">
+<!-- Archival subtle geometric top bar accent -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-primary via-accent-cyan to-brand-secondary"></div>
+<div class="flex items-start gap-space-16 pt-1">
+<!-- Member Avatar Placeholder with Official Verification Badge -->
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-xl bg-surface-container border border-border-light flex items-center justify-center overflow-hidden shadow-inner text-brand-primary">
+<span class="material-symbols-outlined text-[44px] text-brand-primary/40">person</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-status-success text-on-primary flex items-center justify-center shadow-md ring-2 ring-surface-card" title="Anggota Terverifikasi Nasional">
+<span class="material-symbols-outlined text-[15px] material-symbols-fill">verified</span>
+</div>
+</div>
+<!-- Name & Verification Badges -->
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-success-bg border border-brand-secondary text-status-success font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                Terverifikasi Nasional
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-warm border border-border-subtle text-text-secondary font-label-sm text-label-sm">
+                Kader Struktural
+              </span>
+</div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-text-primary leading-snug truncate">Ahmad Fauzi, S.Pd.I</h2>
+<div class="mt-1 flex flex-col font-caption text-caption text-text-secondary space-y-0.5">
+<div><span class="text-text-muted font-semibold">NIA:</span> 32.04.12.2023.00492</div>
+<div><span class="text-text-muted font-semibold">NIK:</span> 320412******0003</div>
+</div>
+</div>
+</div>
+<!-- Institutional Details Chips -->
+<div class="mt-space-16 pt-space-16 border-t border-border-light grid grid-cols-1 gap-2">
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-brand-primary-light/60 border border-brand-primary/15 text-brand-primary">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">shield_person</span>
+<span class="font-label-sm text-label-sm font-semibold truncate">GP Ansor (PAC Kecamatan)</span>
+</div>
+<div class="flex items-center justify-between gap-2 text-text-secondary px-1 text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-text-muted">badge</span>
+              Jabatan: <strong class="text-text-primary font-semibold">Wakil Sekretaris I</strong>
+</span>
+<span class="text-text-muted">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-text-muted">home_pin</span>
+              Ranting: Sukamaju
+            </span>
+</div>
+</div>
+<!-- Member Action Buttons Stack -->
+<div class="mt-space-16 space-y-2">
+<!-- Primary CTA Button (44px touch height) -->
+<button class="w-full h-11 px-space-24 rounded-lg bg-brand-primary hover:bg-brand-primary-hover active:bg-surface-tint text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[19px]">print</span>
+            Cetak KTA Resmi
+          </button>
+<!-- Secondary Row Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 px-3 rounded-lg bg-surface-card border border-brand-primary hover:bg-brand-primary-light text-brand-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+              Edit Profil
+            </button>
+<button class="h-11 px-3 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">lock_reset</span>
+              Keamanan Sandi
+            </button>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 3. KTA DIGITAL CARD (Highlighted Physical Document Metaphor)             -->
+<!-- ======================================================================= -->
+<section class="space-y-space-16">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-primary text-[20px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Kartu Tanda Anggota (KTA) Digital</h3>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-success-bg border border-brand-secondary text-status-success font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-ping"></span>
+            Aktif Berlaku
+          </span>
+</div>
+<!-- Official KTA Digital Card Graphic (Proportional ID Card Aspect Ratio 85.6mm x 53.98mm) -->
+<div class="w-full rounded-2xl bg-kta-islamic text-on-primary p-4 shadow-md border border-accent-cyan/30 relative overflow-hidden flex flex-col justify-between">
+<!-- Card Decorative Ambient Lines -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full border border-on-primary/10 pointer-events-none"></div>
+<div class="absolute -right-16 -bottom-16 w-60 h-60 rounded-full border border-on-primary/5 pointer-events-none"></div>
+<!-- KTA Header -->
+<div class="flex items-start justify-between border-b border-on-primary/20 pb-2.5 relative z-10">
+<div class="flex items-center gap-2.5">
+<!-- Crest Seal Emulation -->
+<div class="w-9 h-9 rounded-full bg-on-primary/10 border border-accent-cyan/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-cyan text-[20px] material-symbols-fill">stars</span>
+</div>
+<div>
+<div class="text-[10px] font-bold tracking-wider text-accent-cyan uppercase font-label-sm">Pengurus Besar Nahdlatul Ulama</div>
+<div class="font-headline-sm text-[13px] leading-none font-semibold text-on-primary mt-0.5">MWC KECAMATAN KEDUNGBANTENG</div>
+<div class="text-[9px] text-on-primary/80 font-caption">Wilayah Kepengurusan Jawa Barat</div>
+</div>
+</div>
+<!-- Banom Emblem Tag -->
+<div class="px-2 py-0.5 rounded bg-brand-primary-hover border border-accent-cyan/30 text-[10px] font-bold text-accent-cyan font-label-sm">
+              GP ANSOR
+            </div>
+</div>
+<!-- KTA Body: Photo, Info, and QR Code -->
+<div class="my-3.5 flex items-center gap-3.5 relative z-10">
+<!-- Member Photo Frame -->
+<div class="w-[68px] h-[82px] rounded-lg bg-surface-card/10 border-2 border-accent-cyan/60 flex flex-col items-center justify-center p-1 shrink-0 backdrop-blur-sm shadow-inner">
+<span class="material-symbols-outlined text-[36px] text-on-primary/70">account_circle</span>
+<span class="text-[8px] tracking-wider text-accent-cyan font-semibold mt-1 uppercase">FOTO KADER</span>
+</div>
+<!-- Identity Typography -->
+<div class="flex-1 min-w-0">
+<span class="text-[9px] text-accent-cyan uppercase tracking-widest font-bold">NAMA LENGKAP KADER</span>
+<h4 class="font-headline-sm text-[15px] font-bold text-on-primary truncate tracking-tight">AHMAD FAUZI, S.Pd.I</h4>
+<div class="mt-1 space-y-0.5 text-[10px] font-caption text-on-primary/90">
+<div class="flex items-center gap-1">
+<span class="text-accent-cyan/90 font-medium">NIA :</span>
+<span class="font-mono font-semibold tracking-tight">32.04.12.2023.00492</span>
+</div>
+<div>
+<span class="text-accent-cyan/90 font-medium">Status:</span>
+<span class="text-secondary-fixed font-semibold">Kader Aktif (PAC Ansor)</span>
+</div>
+<div>
+<span class="text-accent-cyan/90 font-medium">Masa Berlaku:</span>
+<span class="font-semibold text-on-primary">Desember 2028</span>
+</div>
+</div>
+</div>
+<!-- Sislog Encrypted QR Code Simulation -->
+<div class="shrink-0 flex flex-col items-center">
+<div class="w-16 h-16 bg-surface-card rounded-lg p-1 shadow-sm flex flex-col items-center justify-center border border-accent-cyan/40">
+<div class="w-full h-full bg-surface-warm grid grid-cols-4 grid-rows-4 gap-0.5 p-0.5">
+<div class="bg-brand-primary rounded-[1px] col-span-2 row-span-2"></div>
+<div class="bg-brand-primary rounded-[1px]"></div>
+<div class="bg-text-muted rounded-[1px]"></div>
+<div class="bg-text-muted rounded-[1px]"></div>
+<div class="bg-brand-primary rounded-[1px]"></div>
+<div class="bg-brand-primary rounded-[1px]"></div>
+<div class="bg-text-primary rounded-[1px]"></div>
+<div class="bg-brand-primary rounded-[1px] col-span-2 row-span-2"></div>
+</div>
+</div>
+<span class="text-[7px] text-on-primary/70 font-mono tracking-tighter mt-1">SISLOG VERIFIED</span>
+</div>
+</div>
+<!-- KTA Card Micro Footer -->
+<div class="pt-2 border-t border-on-primary/15 flex items-center justify-between text-[9px] font-caption text-on-primary/70 relative z-10">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[11px] text-accent-lime">lock</span>
+              Enkripsi Resmi Sistem Kaderisasi NU
+            </span>
+<span class="font-mono">ID: 3204-AFZ-92</span>
+</div>
+</div>
+<!-- Download & Physical Delivery Action Buttons -->
+<div class="space-y-2">
+<button class="w-full h-11 rounded-lg bg-brand-primary hover:bg-brand-primary-hover active:bg-surface-tint text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[19px]">file_download</span>
+            Unduh Format PDF Resolusi Tinggi
+          </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-lg bg-surface-card border border-border-subtle hover:bg-brand-primary-light text-brand-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+              Kirim ke Email
+            </button>
+<button class="h-11 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px] text-text-secondary">credit_card</span>
+              Cetak Fisik PVC
+            </button>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 4. INFORMASI PRIBADI & KEPENDUDUKAN                                      -->
+<!-- ======================================================================= -->
+<section class="bg-surface-card rounded-xl border border-border-subtle p-space-16 shadow-[0_1px_3px_0_rgba(28,119,90,0.04)]">
+<div class="flex items-center justify-between pb-space-8 border-b border-border-light">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Informasi Pribadi &amp; Kependudukan</h3>
+<p class="font-caption text-caption text-text-muted mt-0.5">Diperbarui: 12 Jan 2025</p>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-warm flex items-center justify-center text-text-secondary">
+<span class="material-symbols-outlined text-[18px]">person_outline</span>
+</span>
+</div>
+<div class="pt-space-16 space-y-space-16">
+<!-- Field 1: Nama Lengkap -->
+<div>
+<label class="block font-label-sm text-label-sm text-text-secondary mb-1">Nama Lengkap &amp; Gelar</label>
+<div class="px-3.5 py-2.5 rounded-lg bg-surface-warm border border-border-light font-body-md text-body-md text-text-primary font-medium">
+              Ahmad Fauzi, S.Pd.I
+            </div>
+</div>
+<!-- Field 2 & 3: TTL & Gender -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-16">
+<div>
+<label class="block font-label-sm text-label-sm text-text-secondary mb-1">Tempat, Tanggal Lahir</label>
+<div class="px-3.5 py-2.5 rounded-lg bg-surface-warm border border-border-light font-body-sm text-body-sm text-text-primary">
+                Bandung, 14 April 1994
+              </div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-text-secondary mb-1">Jenis Kelamin</label>
+<div class="px-3.5 py-2.5 rounded-lg bg-surface-warm border border-border-light font-body-sm text-body-sm text-text-primary">
+                Laki-laki
+              </div>
+</div>
+</div>
+<!-- Field 4: Golongan Darah -->
+<div>
+<label class="block font-label-sm text-label-sm text-text-secondary mb-1">Golongan Darah</label>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-warm border border-border-light font-body-sm text-body-sm text-text-primary">
+<span class="w-2.5 h-2.5 rounded-full bg-status-danger"></span>
+              O (Rhesus +)
+            </div>
+</div>
+<!-- Field 5: WhatsApp Contact -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-sm text-label-sm text-text-secondary">No. Telepon / WhatsApp</label>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-status-success font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+                Aktif WA
+              </span>
+</div>
+<div class="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-surface-warm border border-border-light font-body-sm text-body-sm text-text-primary">
+<span class="font-mono font-medium">+62 812-3456-7890</span>
+<a class="text-brand-primary hover:underline font-label-sm text-label-sm font-semibold flex items-center gap-1" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+                Hubungi
+              </a>
+</div>
+</div>
+<!-- Field 6: Email -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-sm text-label-sm text-text-secondary">Alamat Surel</label>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-status-success font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Terverifikasi
+              </span>
+</div>
+<div class="px-3.5 py-2.5 rounded-lg bg-surface-warm border border-border-light font-body-sm text-body-sm text-text-primary truncate">
+              ahmad.fauzi@ansor-kecamatan.nu.or.id
+            </div>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 5. ALAMAT DOMISILI & WILAYAH KEPENGURUSAN                                -->
+<!-- ======================================================================= -->
+<section class="bg-surface-card rounded-xl border border-border-subtle p-space-16 shadow-[0_1px_3px_0_rgba(28,119,90,0.04)]">
+<div class="flex items-start justify-between pb-space-8 border-b border-border-light">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold leading-snug">Alamat Domisili &amp; Wilayah Kepengurusan</h3>
+<span class="inline-block mt-1 px-2 py-0.5 rounded bg-brand-primary-light text-brand-primary font-caption text-caption font-semibold">
+              Basis Ranting
+            </span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-warm flex items-center justify-center text-text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">share_location</span>
+</span>
+</div>
+<div class="pt-space-16 space-y-3">
+<!-- Alamat KTP -->
+<div class="p-3 rounded-lg bg-surface-warm border border-border-light">
+<span class="font-label-sm text-label-sm text-text-muted block mb-0.5">Alamat KTP &amp; Domisili</span>
+<p class="font-body-md text-body-md text-text-primary font-medium">Jl. Pesantren Al-Falah No. 45 RT 03 / RW 07</p>
+</div>
+<!-- Hierarchical Stack -->
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-base border border-border-light text-label-md font-label-md">
+<span class="text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">holiday_village</span>
+                Desa / Ranting NU
+              </span>
+<span class="text-text-primary font-bold">Desa Sukamaju</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-base border border-border-light text-label-md font-label-md">
+<span class="text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">account_balance</span>
+                Kecamatan / MWC NU
+              </span>
+<span class="text-text-primary font-bold text-right text-xs">MWC Kedungbanteng</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-base border border-border-light text-label-md font-label-md">
+<span class="text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">domain</span>
+                Kabupaten / PC NU
+              </span>
+<span class="text-text-primary font-bold text-right text-xs">PC Kab. Bandung</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-brand-primary-light/40 border border-brand-primary/20 text-label-md font-label-md">
+<span class="text-brand-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">map</span>
+                Provinsi / PW NU
+              </span>
+<span class="text-brand-primary font-bold">Jawa Barat <span class="font-normal text-text-secondary font-mono text-xs">(3204)</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 6. RINGKASAN PARTISIPASI & HAK AKSES BANOM                               -->
+<!-- ======================================================================= -->
+<section class="bg-surface-card rounded-xl border border-border-subtle p-space-16 shadow-[0_1px_3px_0_rgba(28,119,90,0.04)] space-y-space-16">
+<div class="flex items-center justify-between pb-space-8 border-b border-border-light">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Ringkasan Partisipasi &amp; Hak Akses Banom</h3>
+<span class="w-8 h-8 rounded-full bg-surface-warm flex items-center justify-center text-text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+</div>
+<!-- Metric Item -->
+<div class="p-3.5 rounded-xl bg-surface-warm border border-border-light flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-brand-primary-light text-brand-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">event_available</span>
+</div>
+<div>
+<div class="font-caption text-caption text-text-muted uppercase tracking-wider">Keaktifan Kader</div>
+<div class="font-headline-sm text-headline-sm text-brand-primary font-bold">24 Agenda</div>
+<div class="font-caption text-caption text-text-secondary">Total kegiatan MWC &amp; Ranting diikuti</div>
+</div>
+</div>
+<!-- Info Box: Strict Banom Access Rule -->
+<div class="p-3.5 rounded-lg bg-surface-warm border-l-4 border-brand-primary border-y border-r border-border-light space-y-1.5">
+<div class="flex items-center gap-1.5 text-brand-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">info</span>
+            Keterangan Visibilitas &amp; Hak Akses
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Memiliki akses penuh ke agenda Publik dan agenda Khusus GP Ansor. Akses agenda internal Banom lain (Fatayat, IPPNU, Muslimat) dibatasi secara otomatis sesuai ART NU.
+          </p>
+</div>
+<!-- Access Badges Matrix (6 Banom Alignment) -->
+<div>
+<label class="block font-label-sm text-label-sm text-text-muted mb-2 uppercase tracking-wide">Status Akses Portal Badan Otonom</label>
+<div class="grid grid-cols-2 gap-2">
+<!-- Active: GP Ansor -->
+<div class="p-2.5 rounded-lg bg-brand-primary-light border border-brand-secondary flex items-center justify-between text-brand-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] material-symbols-fill">verified</span>
+<span class="font-label-sm text-label-sm font-bold">GP Ansor</span>
+</div>
+<span class="font-caption text-caption font-bold text-status-success">Akses Aktif</span>
+</div>
+<!-- Active: Banser -->
+<div class="p-2.5 rounded-lg bg-brand-primary-light border border-brand-secondary flex items-center justify-between text-brand-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] material-symbols-fill">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Banser</span>
+</div>
+<span class="font-caption text-caption font-bold text-status-success">Akses Aktif</span>
+</div>
+<!-- Locked: Fatayat NU -->
+<div class="p-2.5 rounded-lg bg-surface-warm border border-border-light flex items-center justify-between text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm font-medium">Fatayat NU</span>
+</div>
+<span class="font-caption text-caption">Dibatasi</span>
+</div>
+<!-- Locked: Muslimat NU -->
+<div class="p-2.5 rounded-lg bg-surface-warm border border-border-light flex items-center justify-between text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm font-medium">Muslimat NU</span>
+</div>
+<span class="font-caption text-caption">Dibatasi</span>
+</div>
+<!-- Alumni/Open: IPNU -->
+<div class="p-2.5 rounded-lg bg-accent-cyan-subtle border border-accent-cyan flex items-center justify-between text-tertiary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span class="font-label-sm text-label-sm font-semibold">IPNU</span>
+</div>
+<span class="font-caption text-caption font-medium text-tertiary">Alumni Kader</span>
+</div>
+<!-- Locked: IPPNU -->
+<div class="p-2.5 rounded-lg bg-surface-warm border border-border-light flex items-center justify-between text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm font-medium">IPPNU</span>
+</div>
+<span class="font-caption text-caption">Dibatasi</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 7. RIWAYAT KADERISASI & JENJANG PENDIDIKAN NU                             -->
+<!-- ======================================================================= -->
+<section class="bg-surface-card rounded-xl border border-border-subtle p-space-16 shadow-[0_1px_3px_0_rgba(28,119,90,0.04)]">
+<div class="flex items-center justify-between pb-space-8 border-b border-border-light mb-space-16">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Riwayat Kaderisasi &amp; Jenjang Pendidikan NU</h3>
+<p class="font-caption text-caption text-text-muted mt-0.5">Sertifikasi &amp; Pengkaderan Resmi</p>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-brand-primary-light text-brand-primary font-label-sm text-label-sm font-bold border border-brand-primary/20">
+            3 Terverifikasi
+          </span>
+</div>
+<!-- Vertical Timeline Stack -->
+<div class="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-border-light">
+<!-- Step 1: Diklatsar Banser BAGANA -->
+<div class="relative">
+<div class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-brand-primary ring-4 ring-surface-card flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="bg-surface-warm rounded-lg p-3 border border-border-light space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted">Tahun 2021 • Satkorcab Banser</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-status-success font-semibold">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+                  Bersertifikat Resmi
+                </span>
+</div>
+<h4 class="font-label-md text-label-md text-text-primary font-bold leading-snug">
+                Diklatsar Banser Khusus Kebencanaan (BAGANA)
+              </h4>
+<div class="font-caption text-caption text-text-secondary pt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-text-muted">pin</span>
+                No. Registrasi: <span class="font-mono text-text-primary font-semibold">BS-BGN-3204-2021-089</span>
+</div>
+</div>
+</div>
+<!-- Step 2: PKD GP Ansor -->
+<div class="relative">
+<div class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-brand-primary ring-4 ring-surface-card flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="bg-surface-warm rounded-lg p-3 border border-border-light space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted">Tahun 2018 • PAC GP Ansor</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-status-success-bg text-status-success font-caption text-caption font-bold">
+                  Predikat Terbaik
+                </span>
+</div>
+<h4 class="font-label-md text-label-md text-text-primary font-bold leading-snug">
+                Pelatihan Kepemimpinan Dasar (PKD) GP Ansor
+              </h4>
+<p class="font-body-sm text-body-sm text-text-secondary pt-0.5">
+                Lulus jenjang pengkaderan dasar kepemimpinan pemuda Ansor tingkat kecamatan.
+              </p>
+</div>
+</div>
+<!-- Step 3: MAKESTA IPNU -->
+<div class="relative">
+<div class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-border-subtle ring-4 ring-surface-card flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-card"></span>
+</div>
+<div class="bg-surface-warm rounded-lg p-3 border border-border-light space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted">Tahun 2012 • PAC IPNU</span>
+<span class="font-caption text-caption text-brand-primary font-semibold">Lulus</span>
+</div>
+<h4 class="font-label-md text-label-md text-text-primary font-bold leading-snug">
+                Masa Kesetiaan Anggota (MAKESTA) IPNU
+              </h4>
+<p class="font-caption text-caption text-text-secondary pt-0.5">
+                Pintu gerbang jenjang pengkaderan pertama pelajar Nahdlatul Ulama.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Regulatory Disclaimer Banner -->
+<div class="py-2 text-center text-text-muted font-caption text-caption space-y-1">
+<p>Data keanggotaan terdaftar resmi di Database Sislog PB NU.</p>
+<p>© 2025 Majelis Wakil Cabang Nahdlatul Ulama (MWCNU). Hak Cipta Dilindungi.</p>
+</div>
+</main>
+<!-- ========================================================================= -->
+<!-- 8. DEDICATED MOBILE BOTTOM NAVIGATION BAR                                  -->
+<!-- Semantic Shell: Strict alignment to shared components and theme tokens    -->
+<!-- BAN ON BORDERS: Separated via elevation/shadow and background tone only  -->
+<!-- ========================================================================= -->
+<nav aria-label="Navigasi Utama Anggota" class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-50 bg-surface-card/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(28,119,90,0.08)] px-2 py-1.5">
+<div class="grid grid-cols-4 items-center h-14">
+<!-- Tab 1: Beranda -->
+<a class="flex flex-col items-center justify-center py-1 text-text-secondary hover:text-brand-primary transition-colors duration-150" href="#beranda">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-caption text-[11px] leading-tight mt-0.5 font-normal">Beranda</span>
+</a>
+<!-- Tab 2: Kegiatan -->
+<a class="flex flex-col items-center justify-center py-1 text-text-secondary hover:text-brand-primary transition-colors duration-150" href="#kegiatan">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+<span class="font-caption text-[11px] leading-tight mt-0.5 font-normal">Kegiatan</span>
+</a>
+<!-- Tab 3: KTA & Profil (ACTIVE STATE MATCHING PAGE INTENT) -->
+<a class="flex flex-col items-center justify-center py-1 text-brand-primary font-semibold relative" href="#profil">
+<div class="w-10 h-7 rounded-full bg-brand-primary-light flex items-center justify-center text-brand-primary">
+<span class="material-symbols-outlined text-[22px] material-symbols-fill">badge</span>
+</div>
+<span class="font-caption text-[11px] leading-tight mt-0.5 font-semibold text-brand-primary">KTA &amp; Profil</span>
+<!-- Active Dot Anchor -->
+<span class="w-1 h-1 rounded-full bg-brand-primary mt-0.5"></span>
+</a>
+<!-- Tab 4: Layanan -->
+<a class="flex flex-col items-center justify-center py-1 text-text-secondary hover:text-brand-primary transition-colors duration-150" href="#layanan">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+<span class="font-caption text-[11px] leading-tight mt-0.5 font-normal">Layanan</span>
+</a>
+</div>
+</nav>
+</div>
+<!-- Inline Vanilla Micro-interactions (Download triggers, copy NIA, feedback) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Gentle feedback notification simulator for member interactions
+      const notifyAction = (text) => {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 bg-text-primary text-on-primary text-body-sm font-body-sm rounded-lg shadow-xl flex items-center gap-2 transition-all duration-300 transform -translate-y-2 opacity-0';
+        toast.innerHTML = `<span class="material-symbols-outlined text-[18px] text-accent-lime">check_circle</span><span>${text}</span>`;
+        document.body.appendChild(toast);
+        
+        requestAnimationFrame(() => {
+          toast.classList.remove('-translate-y-2', 'opacity-0');
+        });
+        
+        setTimeout(() => {
+          toast.classList.add('opacity-0', '-translate-y-2');
+          setTimeout(() => toast.remove(), 300);
+        }, 2200);
+      };
+
+      // Wire buttons to interactive micro-actions
+      const printBtn = document.querySelectorAll('button');
+      printBtn.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const content = btn.innerText.trim();
+          if (content.includes('Cetak') || content.includes('Unduh')) {
+            notifyAction('Memproses dokumen: ' + content);
+          } else if (content.includes('Email')) {
+            notifyAction('KTA Digital dikirim ke surel terdaftar');
+          }
+        });
+      });
+    });
+  </script>
+</body></html>

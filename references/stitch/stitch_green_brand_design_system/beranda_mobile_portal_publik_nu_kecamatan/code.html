@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MWC NU Kecamatan - Portal Publik Resmi Nahdlatul Ulama</title>
+<!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Humanist UI Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "brand-primary": "#1C775A",
+            "surface-base": "#FFFFFF",
+            "surface-variant": "#e3e3d6",
+            "secondary-fixed-dim": "#77dd77",
+            "on-surface": "#1a1c14",
+            "surface-container": "#eeefe1",
+            "tertiary-fixed": "#a4f0f1",
+            "status-success": "#1E7E34",
+            "primary": "#005d44",
+            "surface-bright": "#fafaed",
+            "accent-cyan-subtle": "#EBF8F8",
+            "on-tertiary-fixed-variant": "#004f51",
+            "surface": "#fafaed",
+            "text-muted": "#7B847F",
+            "on-error": "#ffffff",
+            "inverse-surface": "#2f3128",
+            "status-warning": "#B7791F",
+            "primary-container": "#1c775a",
+            "surface-warm": "#FAFAFA",
+            "on-background": "#1a1c14",
+            "surface-tint": "#F4F7F5",
+            "secondary-container": "#92fa90",
+            "inverse-on-surface": "#f1f2e4",
+            "on-primary-container": "#a6fbd7",
+            "secondary-fixed": "#92fa90",
+            "surface-container-high": "#e8e9dc",
+            "primary-fixed-dim": "#83d7b4",
+            "surface-container-low": "#f4f5e7",
+            "surface-container-highest": "#e3e3d6",
+            "surface-container-lowest": "#ffffff",
+            "status-warning-bg": "#FEF9E7",
+            "accent-cyan": "#94DFE0",
+            "error": "#ba1a1a",
+            "tertiary": "#005b5c",
+            "on-primary-fixed": "#002116",
+            "tertiary-fixed-dim": "#88d3d4",
+            "border-focus": "#1C775A",
+            "tertiary-container": "#237475",
+            "on-secondary-fixed": "#002204",
+            "on-secondary-container": "#007520",
+            "on-secondary-fixed-variant": "#005314",
+            "brand-primary-hover": "#165F48",
+            "brand-secondary-hover": "#5FC85F",
+            "status-danger": "#C53030",
+            "inverse-primary": "#83d7b4",
+            "on-tertiary-fixed": "#002020",
+            "border-light": "#E2E4DC",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "surface-dim": "#dadbce",
+            "surface-card": "#FFFFFF",
+            "accent-lime": "#BFFF00",
+            "on-surface-variant": "#3f4944",
+            "text-secondary": "#5B635E",
+            "outline": "#6f7a73",
+            "brand-primary-light": "#E8F4F0",
+            "brand-secondary": "#77DD77",
+            "border-subtle": "#CFD0C3",
+            "text-primary": "#1A201C",
+            "secondary": "#006e1d",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#acf7f8",
+            "on-tertiary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#00513b",
+            "status-success-bg": "#E9F7EF",
+            "outline-variant": "#bec9c2",
+            "background": "#fafaed",
+            "primary-fixed": "#9ff4cf",
+            "status-danger-bg": "#FDE8E8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-48": "48px",
+            "container-max-public": "1280px",
+            "space-32": "32px",
+            "gutter-desktop": "32px",
+            "space-40": "40px",
+            "space-16": "16px",
+            "space-8": "8px",
+            "space-64": "64px",
+            "space-56": "56px",
+            "space-80": "80px",
+            "space-96": "96px",
+            "space-24": "24px",
+            "container-max-admin": "1440px",
+            "gutter-mobile": "16px",
+            "gutter-tablet": "24px"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Newsreader"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Newsreader"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md-mobile": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "display-hero": ["Newsreader"],
+            "display-hero-mobile": ["Newsreader"],
+            "caption": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Newsreader"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Custom scrollbar suppression for touch pill tracks */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body class="bg-surface text-text-primary antialiased font-body-md text-body-md selection:bg-brand-primary-light selection:text-brand-primary min-h-screen flex flex-col items-center">
+<!-- Mobile Canvas Frame: 390px Optimized Container -->
+<div class="w-full max-w-[430px] min-h-screen bg-surface-bright flex flex-col shadow-2xl relative pb-space-56 border-x border-border-light">
+<!-- ================================================================= -->
+<!-- 1. COMPACT MOBILE HEADER (Sticky TopAppBar Anchor) -->
+<!-- ================================================================= -->
+<header class="sticky top-0 z-50 w-full bg-surface-base/95 backdrop-blur-md px-gutter-mobile h-space-56 flex items-center justify-between border-b border-border-light shadow-sm">
+<!-- Wordmark / Logo -->
+<a class="flex items-center gap-space-8 group" href="#">
+<div class="w-9 h-9 rounded-lg bg-brand-primary flex items-center justify-center text-surface-base shadow-sm">
+<!-- Institutional NU Emblem Representation -->
+<svg class="w-5 h-5 text-surface-base" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M12 3a9 9 0 0 0-9 9m18 0a9 9 0 0 0-9-9"></path>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-base font-bold text-brand-primary tracking-tight leading-none">MWC NU Kecamatan</span>
+<span class="font-caption text-[10px] text-text-secondary leading-tight mt-0.5 font-medium">Nahdlatul Ulama Tingkat Kecamatan</span>
+</div>
+</a>
+<!-- Action Cluster (min 44px touch-target compliance) -->
+<div class="flex items-center gap-1">
+<!-- Search icon trigger -->
+<button aria-label="Cari Berita dan Agenda" class="w-11 h-11 flex items-center justify-center text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light rounded-full transition-all duration-150">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</button>
+<!-- Portal Anggota CTA Button -->
+<a class="hidden sm:inline-flex h-9 px-3 items-center justify-center bg-brand-primary-light text-brand-primary font-label-sm text-label-sm rounded-md hover:bg-brand-primary hover:text-surface-base transition-colors duration-150" href="#portal-anggota">
+          Portal Anggota
+        </a>
+<!-- Mobile Menu Hamburger -->
+<button aria-label="Buka Menu Navigasi" class="w-11 h-11 flex items-center justify-center text-text-primary hover:bg-surface-tint rounded-lg transition-colors duration-150" id="menu-btn">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile Drawer Overlay (Lightweight Vanilla Interaction) -->
+<nav class="hidden fixed inset-x-0 top-space-56 bg-surface-base border-b border-border-subtle shadow-xl z-40 px-gutter-mobile py-space-16 transition-all duration-200" id="mobile-drawer">
+<div class="flex flex-col gap-1">
+<a class="flex items-center justify-between px-space-16 py-3 rounded-lg text-brand-primary font-semibold bg-brand-primary-light text-label-md" href="#beranda">
+<span>Beranda</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-16 py-3 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-tint font-label-md transition-colors" href="#berita">
+<span>Berita</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-16 py-3 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-tint font-label-md transition-colors" href="#kegiatan">
+<span>Kegiatan Banom</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-16 py-3 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-tint font-label-md transition-colors" href="#banom">
+<span>Badan Otonom</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-16 py-3 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-tint font-label-md transition-colors" href="#tentang">
+<span>Tentang Kami</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+<div class="pt-2 border-t border-border-light flex gap-2">
+<a class="flex-1 h-11 flex items-center justify-center gap-2 bg-brand-primary text-surface-base font-label-md text-label-md rounded-lg shadow-sm" href="#portal">
+<span class="material-symbols-outlined text-lg">badge</span>
+<span>Portal Anggota</span>
+</a>
+<a class="h-11 px-4 flex items-center justify-center border border-border-subtle text-text-primary font-label-md rounded-lg hover:bg-surface-warm" href="#kontak">
+<span>Kontak</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- ================================================================= -->
+<!-- 2. RUNNING NEWS TICKER / WARTA TERKINI ALERT BANNER -->
+<!-- ================================================================= -->
+<div class="w-full bg-brand-primary-light border-b border-brand-primary/20 px-gutter-mobile py-2.5 flex items-center gap-2.5">
+<span class="inline-flex items-center gap-1.5 shrink-0 bg-brand-primary text-surface-base text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-lime animate-pulse"></span>
+        Warta Terkini
+      </span>
+<div class="flex-1 overflow-hidden">
+<p class="font-body-sm text-body-sm text-text-primary truncate font-medium">
+          Konferensi MWC NU Kecamatan Digelar Akhir Pekan Ini di Gedung Serbaguna Kecamatan
+        </p>
+</div>
+<a class="shrink-0 font-label-sm text-label-sm text-brand-primary font-bold hover:underline flex items-center" href="#warta-terkini">
+        Baca
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- MAIN SCROLLABLE CONTENT CANVAS -->
+<main class="flex-1 flex flex-col gap-space-32 pt-space-16">
+<!-- ================================================================= -->
+<!-- 3. HERO FEATURED NEWS (Editorial Mobile Single-Column) -->
+<!-- ================================================================= -->
+<section class="px-gutter-mobile flex flex-col gap-space-16">
+<!-- Lead Label -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-brand-primary"></span>
+<span class="font-label-sm text-label-sm text-brand-primary uppercase tracking-wider">Tajuk Khidmat Utama</span>
+</div>
+<span class="font-caption text-caption text-text-muted">Edisi Mei 2025</span>
+</div>
+<!-- Primary Featured News Card -->
+<article class="bg-surface-base border border-border-subtle rounded-xl overflow-hidden shadow-sm flex flex-col group transition-all duration-200 hover:border-brand-primary/40">
+<!-- Neutral Editorial Visual Placeholder (No human faces) -->
+<div class="relative w-full aspect-[16/9] bg-surface-container flex flex-col items-center justify-center p-space-16 border-b border-border-light overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-brand-primary/10 via-transparent to-surface-container"></div>
+<!-- Micro grid pattern -->
+<div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#1C775A 1px, transparent 1px); background-size: 16px 16px;"></div>
+<div class="relative z-10 w-12 h-12 rounded-xl bg-surface-base/80 backdrop-blur-sm border border-border-light flex items-center justify-center text-brand-primary shadow-xs">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<span class="relative z-10 mt-2 font-caption text-caption text-text-secondary bg-surface-base/90 px-2.5 py-0.5 rounded-full border border-border-subtle">
+              Dokumentasi LTN NU Kecamatan
+            </span>
+</div>
+<!-- Card Content Body -->
+<div class="p-space-24 flex flex-col gap-space-8">
+<div class="flex items-center justify-between text-text-muted">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-brand-primary-light text-brand-primary font-label-sm text-[11px]">
+                Keorganisasian
+              </span>
+<span class="font-caption text-caption">14 Mei 2025 • 4 mnt baca</span>
+</div>
+<h1 class="font-headline-md-mobile text-headline-md-mobile font-bold text-text-primary leading-snug group-hover:text-brand-primary transition-colors">
+              MWC NU Kecamatan Perkuat Konsolidasi Ranting dan Pemberdayaan Ekonomi Umat
+            </h1>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-3 leading-relaxed">
+              Rapat pleno gabungan Syuriyah dan Tanfidziyah Majelis Wakil Cabang menetapkan peta jalan strategis untuk memperkokoh akuntabilitas kemandirian ekonomi, sinergi kelembagaan, serta penguatan posko terpadu di 14 ranting desa.
+            </p>
+<div class="pt-space-8 mt-space-8 border-t border-border-light flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-full bg-brand-primary text-surface-base flex items-center justify-center text-xs font-bold">
+                  LT
+                </span>
+<span class="font-caption text-caption text-text-primary font-medium">Lembaga Ta'lif wan Nasyr (LTN) NU</span>
+</div>
+<a class="h-9 px-3 rounded-lg bg-brand-primary text-surface-base font-label-sm text-label-sm inline-flex items-center gap-1 hover:bg-brand-primary-hover active:scale-[0.98] transition-all" href="#baca-warta-1">
+<span>Baca Warta</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Secondary News Cards (Stacked Vertically) -->
+<div class="flex flex-col gap-space-16">
+<!-- Card 1: Pendidikan -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-space-8 shadow-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-accent-cyan-subtle text-[#0E6E70] border border-accent-cyan font-label-sm text-[11px]">
+                Pendidikan
+              </span>
+<span class="font-caption text-caption text-text-muted">13 Mei 2025</span>
+</div>
+<h2 class="font-title-md text-title-md font-semibold text-text-primary leading-tight">
+              Peningkatan Mutu TPQ dan Madin Se-Kecamatan melalui Kurikulum Aswaja Terpadu
+            </h2>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+              Lembaga Pendidikan Ma'arif NU Kecamatan merilis standardisasi modul ajar aqidah dan amaliyah ke-NU-an bagi seluruh pengajar madrasah diniyah.
+            </p>
+<div class="flex items-center justify-end pt-1">
+<a class="font-label-sm text-label-sm text-brand-primary font-semibold hover:underline inline-flex items-center gap-0.5" href="#selengkapnya-1">
+<span>Selengkapnya</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Card 2: Sosial Kemasyarakatan -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-space-8 shadow-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-brand-primary-light text-brand-primary border border-secondary-fixed-dim font-label-sm text-[11px]">
+                Sosial Kemasyarakatan
+              </span>
+<span class="font-caption text-caption text-text-muted">11 Mei 2025</span>
+</div>
+<h2 class="font-title-md text-title-md font-semibold text-text-primary leading-tight">
+              Gerakan Koin NU Peduli Capai Target Tahunan untuk Layanan Mobil Siaga Umat
+            </h2>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+              Pengelolaan ziswaf berbasis koin mandiri jamaah sukses mendanai armada ambulans darurat gratis yang beroperasi 24 jam untuk seluruh masyarakat.
+            </p>
+<div class="flex items-center justify-end pt-1">
+<a class="font-label-sm text-label-sm text-brand-primary font-semibold hover:underline inline-flex items-center gap-0.5" href="#selengkapnya-2">
+<span>Selengkapnya</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 4. BERITA TERBARU (Latest News Single-Column Feed) -->
+<!-- ================================================================= -->
+<section class="px-gutter-mobile flex flex-col gap-space-16">
+<!-- Section Header -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Berita Terbaru</h2>
+<a class="font-label-sm text-label-sm text-brand-primary hover:underline flex items-center" href="#semua-berita">
+              Lihat Semua
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-snug">
+            Informasi terkini, pengumuman resmi, dan dinamika kegiatan jam'iyyah se-Kecamatan.
+          </p>
+</div>
+<!-- 6 Stacked News Cards -->
+<div class="flex flex-col gap-3">
+<!-- Card 1 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">mosque</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">Majelis</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Keagamaan</span>
+<span class="text-[10px] text-text-muted">• 10 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  Pengajian Rutin Ahad Pagi Majelis Wakil Cabang Dihadiri Ribuan Jamaah
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">Kader Dakwah</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">shield</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">Siaga</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Kegiatan</span>
+<span class="text-[10px] text-text-muted">• 09 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  Banser Siagakan Personel Relawan Tanggap Bencana Musim Hujan di 12 Titik
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">Satkoryon Banser</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">storefront</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">UMKM</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Ekonomi Umat</span>
+<span class="text-[10px] text-text-muted">• 08 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  Pelatihan Digital Marketing bagi Pelaku UMKM Warga Nahdliyin
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">LPNU Kecamatan</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">Kesehatan</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Sosial</span>
+<span class="text-[10px] text-text-muted">• 06 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  Fatayat NU Sukseskan Program Pencegahan Stunting Balita di Ranting
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">PAC Fatayat NU</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">school</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">Kaderisasi</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Banom / Kaderisasi</span>
+<span class="text-[10px] text-text-muted">• 04 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  IPNU-IPPNU Gelar Makesta Raya Sambut Pelajar Baru di Tingkat Ranting
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">PAC IPNU-IPPNU</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex gap-3 shadow-xs hover:border-brand-primary/40 transition-colors">
+<div class="w-20 h-20 shrink-0 rounded-lg bg-surface-container flex flex-col items-center justify-center border border-border-light text-brand-primary">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+<span class="text-[9px] font-caption text-text-muted mt-0.5">Beasiswa</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] text-brand-primary font-bold uppercase">Pendidikan</span>
+<span class="text-[10px] text-text-muted">• 02 Mei</span>
+</div>
+<h3 class="font-title-md text-sm font-semibold text-text-primary leading-tight line-clamp-2">
+                  Lembaga Amil Zakat NU (LAZISNU) Salurkan Beasiswa Santri Berprestasi
+                </h3>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-text-secondary">Upzis LAZISNU</span>
+<span class="material-symbols-outlined text-sm text-brand-primary">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 5. KEGIATAN TERBARU & MENDATANG (Public Activities Mobile Section) -->
+<!-- ================================================================= -->
+<section class="bg-surface-warm border-y border-border-light py-space-24 px-gutter-mobile flex flex-col gap-space-16">
+<!-- Section Header -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-brand-primary uppercase tracking-wider font-semibold">Agenda Nahdliyin</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Kegiatan Terbaru &amp; Mendatang</h2>
+</div>
+<!-- Horizontal Scrollable Banom Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-gutter-mobile px-gutter-mobile">
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-brand-primary text-surface-base font-label-sm text-label-sm shadow-xs font-semibold">
+            Semua
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-base border border-border-subtle text-text-secondary hover:text-text-primary font-label-sm text-label-sm whitespace-nowrap">
+            IPNU / IPPNU
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-base border border-border-subtle text-text-secondary hover:text-text-primary font-label-sm text-label-sm whitespace-nowrap">
+            GP Ansor
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-base border border-border-subtle text-text-secondary hover:text-text-primary font-label-sm text-label-sm whitespace-nowrap">
+            Banser
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-base border border-border-subtle text-text-secondary hover:text-text-primary font-label-sm text-label-sm whitespace-nowrap">
+            Fatayat NU
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-base border border-border-subtle text-text-secondary hover:text-text-primary font-label-sm text-label-sm whitespace-nowrap">
+            Muslimat NU
+          </button>
+</div>
+<!-- 4 Mobile Activity Cards -->
+<div class="flex flex-col gap-space-16">
+<!-- Activity 1 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<!-- Date Badge -->
+<div class="shrink-0 w-16 bg-surface-tint border border-brand-primary/20 rounded-lg p-1.5 text-center flex flex-col items-center">
+<span class="font-caption text-[10px] uppercase font-bold text-brand-primary">MEI</span>
+<span class="font-headline-sm text-2xl font-bold text-text-primary leading-none my-0.5">18</span>
+<span class="font-caption text-[9px] uppercase text-text-secondary font-semibold">AHAD</span>
+</div>
+<!-- Content Meta -->
+<div class="flex-1 flex flex-col">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-accent-cyan-subtle text-[#0E6E70] font-label-sm text-[10px] border border-accent-cyan">
+                    IPNU / IPPNU
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-status-success-bg text-status-success font-label-sm text-[10px] border border-brand-secondary">
+                    Terbuka untuk Umum
+                  </span>
+</div>
+<h3 class="font-title-md text-base font-semibold text-text-primary leading-snug">
+                  Kajian Pelajar Aswaja: Menangkal Hoaks dan Radikalisme di Media Sosial
+                </h3>
+</div>
+</div>
+<!-- Details: Time & Venue -->
+<div class="pt-2 border-t border-border-light flex flex-col gap-1 text-text-secondary text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">schedule</span>
+<span class="text-xs">08:30 - 12:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">location_on</span>
+<span class="text-xs">Aula KH. Hasyim Asy'ari</span>
+</div>
+</div>
+</article>
+<!-- Activity 2 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<!-- Date Badge -->
+<div class="shrink-0 w-16 bg-surface-tint border border-brand-primary/20 rounded-lg p-1.5 text-center flex flex-col items-center">
+<span class="font-caption text-[10px] uppercase font-bold text-brand-primary">MEI</span>
+<span class="font-headline-sm text-2xl font-bold text-text-primary leading-none my-0.5">23</span>
+<span class="font-caption text-[9px] uppercase text-text-secondary font-semibold">JUM'AT</span>
+</div>
+<!-- Content Meta -->
+<div class="flex-1 flex flex-col">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-brand-primary-light text-brand-primary font-label-sm text-[10px] border border-secondary-fixed-dim">
+                    GP Ansor
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-status-success-bg text-status-success font-label-sm text-[10px] border border-brand-secondary">
+                    Terbuka untuk Umum
+                  </span>
+</div>
+<h3 class="font-title-md text-base font-semibold text-text-primary leading-snug">
+                  Majelis Dzikir dan Sholawat Rijalul Ansor Putaran Ranting Barat
+                </h3>
+</div>
+</div>
+<!-- Details -->
+<div class="pt-2 border-t border-border-light flex flex-col gap-1 text-text-secondary text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">schedule</span>
+<span class="text-xs">19:30 WIB - Selesai</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">location_on</span>
+<span class="text-xs">Masjid Baiturrahim Desa Sukamaju</span>
+</div>
+</div>
+</article>
+<!-- Activity 3 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<!-- Date Badge -->
+<div class="shrink-0 w-16 bg-surface-tint border border-brand-primary/20 rounded-lg p-1.5 text-center flex flex-col items-center">
+<span class="font-caption text-[10px] uppercase font-bold text-brand-primary">MEI</span>
+<span class="font-headline-sm text-2xl font-bold text-text-primary leading-none my-0.5">25</span>
+<span class="font-caption text-[9px] uppercase text-text-secondary font-semibold">AHAD</span>
+</div>
+<!-- Content Meta -->
+<div class="flex-1 flex flex-col">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-tint text-text-primary font-label-sm text-[10px] border border-border-subtle">
+                    Muslimat NU
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-status-success-bg text-status-success font-label-sm text-[10px] border border-brand-secondary">
+                    Terbuka untuk Umum
+                  </span>
+</div>
+<h3 class="font-title-md text-base font-semibold text-text-primary leading-snug">
+                  Pengajian Kubro Muslimat &amp; Fatayat NU Sambut Bulan Dzulqa'dah
+                </h3>
+</div>
+</div>
+<!-- Details -->
+<div class="pt-2 border-t border-border-light flex flex-col gap-1 text-text-secondary text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">schedule</span>
+<span class="text-xs">08:00 - 11:30 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">location_on</span>
+<span class="text-xs">Gedung IPHI Kecamatan</span>
+</div>
+</div>
+</article>
+<!-- Activity 4 -->
+<article class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<!-- Date Badge -->
+<div class="shrink-0 w-16 bg-surface-tint border border-brand-primary/20 rounded-lg p-1.5 text-center flex flex-col items-center">
+<span class="font-caption text-[10px] uppercase font-bold text-brand-primary">JUNI</span>
+<span class="font-headline-sm text-2xl font-bold text-text-primary leading-none my-0.5">01</span>
+<span class="font-caption text-[9px] uppercase text-text-secondary font-semibold">AHAD</span>
+</div>
+<!-- Content Meta -->
+<div class="flex-1 flex flex-col">
+<div class="flex flex-wrap items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-brand-primary-light text-brand-primary font-label-sm text-[10px] border border-secondary-fixed-dim">
+                    Banser
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface text-surface-base font-label-sm text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[11px]">lock</span>
+                    Internal Satkoryon
+                  </span>
+</div>
+<h3 class="font-title-md text-base font-semibold text-text-primary leading-snug">
+                  Apel Siaga &amp; Latihan Gabungan Pertolongan Pertama Gawat Darurat (PPGD)
+                </h3>
+</div>
+</div>
+<!-- Details -->
+<div class="pt-2 border-t border-border-light flex flex-col gap-1 text-text-secondary text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">schedule</span>
+<span class="text-xs">07:00 - 15:00 WIB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-brand-primary">location_on</span>
+<span class="text-xs">Lapangan Olahraga Kecamatan</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 6. BADAN OTONOM (BANOM) NU DIRECTORY (Mobile 6 Banom Directory) -->
+<!-- ================================================================= -->
+<section class="px-gutter-mobile flex flex-col gap-space-16">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-brand-primary uppercase tracking-wider font-semibold">Sayap Pergerakan Jam'iyyah</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">Badan Otonom (Banom) NU</h2>
+<p class="font-body-sm text-body-sm text-text-secondary leading-snug">
+            Wadah pengkaderan dan khidmat terarah bagi pelajar, pemuda, pemudi, hingga kaum ibu di tingkat kecamatan.
+          </p>
+</div>
+<!-- 6 Stacked Banom Cards -->
+<div class="grid grid-cols-1 gap-space-16">
+<!-- Banom 1: IPNU -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-accent-cyan-subtle border border-accent-cyan flex items-center justify-center text-[#0E6E70] font-bold text-sm">
+                IPNU
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">IPNU</h3>
+<span class="font-caption text-caption text-text-muted">Ikatan Pelajar Nahdlatul Ulama • Putra Pelajar</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">Makesta Raya Semester Genap</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Banom 2: IPPNU -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-accent-cyan-subtle border border-accent-cyan flex items-center justify-center text-[#0E6E70] font-bold text-sm">
+                IPPNU
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">IPPNU</h3>
+<span class="font-caption text-caption text-text-muted">Ikatan Pelajar Putri Nahdlatul Ulama • Putri Pelajar</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">Workshop Literasi Media Santriwati</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Banom 3: GP Ansor -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-brand-primary-light border border-secondary-fixed-dim flex items-center justify-center text-brand-primary font-bold text-sm">
+                ANSOR
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">GP Ansor</h3>
+<span class="font-caption text-caption text-text-muted">Gerakan Pemuda Ansor • Pemuda NU</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">PKD Angkatan VIII</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Banom 4: Banser -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-brand-primary-light border border-secondary-fixed-dim flex items-center justify-center text-brand-primary font-bold text-sm">
+                BANSER
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">Banser</h3>
+<span class="font-caption text-caption text-text-muted">Barisan Ansor Serbaguna • Tenaga Inti Ansor</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">Posko Tanggap Bencana &amp; Pam Rutin</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Banom 5: Fatayat NU -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-tint border border-border-subtle flex items-center justify-center text-text-primary font-bold text-sm">
+                FATAYAT
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">Fatayat NU</h3>
+<span class="font-caption text-caption text-text-muted">Pemudi Nahdliyin • Kaum Muda Putri</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">Pencegahan Stunting Balita Desa</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Banom 6: Muslimat NU -->
+<div class="bg-surface-base border border-border-subtle rounded-xl p-space-16 flex flex-col gap-3 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-tint border border-border-subtle flex items-center justify-center text-text-primary font-bold text-sm">
+                MUSLIMAT
+              </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-base font-semibold text-text-primary">Muslimat NU</h3>
+<span class="font-caption text-caption text-text-muted">Wanita &amp; Ibu NU • Pilar Ketahanan Keluarga</span>
+</div>
+</div>
+<div class="bg-surface-warm p-2.5 rounded-lg border border-border-light flex items-center justify-between text-xs">
+<span class="text-text-secondary">Aktivitas Terkini:</span>
+<span class="font-semibold text-text-primary text-right">Majelis Asmaul Husna Akbar</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-surface-tint border border-border-subtle text-brand-primary font-label-sm text-label-sm flex items-center justify-center gap-1 hover:bg-brand-primary-light transition-colors">
+<span>Lihat Profil &amp; Agenda</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- 7. KHIDMAT UNTUK UMAT DAN BANGSA (Organization Identity & Stats) -->
+<!-- ================================================================= -->
+<section class="bg-brand-primary text-surface-base px-gutter-mobile py-space-32 flex flex-col gap-space-24 relative overflow-hidden">
+<!-- Subtle Institutional Architectural Watermark -->
+<div class="absolute -right-8 -bottom-8 opacity-10 pointer-events-none">
+<svg class="w-64 h-64 text-surface-base" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M12 3a9 9 0 0 0-9 9m18 0a9 9 0 0 0-9-9"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-2 relative z-10">
+<span class="inline-flex items-center gap-1.5 text-accent-lime font-label-sm text-xs font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-lime"></span>
+            Khidmat Jam'iyyah
+          </span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile font-bold leading-tight">
+            Menegakkan Ajaran Islam Ahlussunnah wal Jama'ah &amp; Membangun Kemandirian Warga
+          </h2>
+</div>
+<!-- Rais Syuriyah Statement -->
+<div class="bg-brand-primary-hover/70 border border-brand-primary-light/20 rounded-xl p-space-16 relative z-10 flex flex-col gap-2">
+<span class="material-symbols-outlined text-accent-lime text-2xl opacity-80">format_quote</span>
+<p class="font-body-md text-sm italic leading-relaxed text-surface-bright">
+            "Kekuatan Nahdlatul Ulama berada pada ketulusan khidmat pengurus di ranting-ranting desa serta soliditas amaliyah keagamaan yang mengakar di hati warga."
+          </p>
+<div class="pt-2 border-t border-brand-primary-light/15 flex items-center justify-between">
+<span class="font-label-sm text-xs font-semibold text-primary-fixed">K.H. Ahmad Syarifuddin</span>
+<span class="font-caption text-[11px] text-surface-variant">Rais Syuriyah MWC NU</span>
+</div>
+</div>
+<!-- Principles Tags -->
+<div class="flex flex-wrap gap-2 relative z-10">
+<div class="bg-surface-base/10 backdrop-blur-xs px-3 py-1.5 rounded-md border border-surface-base/20 flex items-center gap-1.5 text-xs font-medium">
+<span class="material-symbols-outlined text-sm text-accent-lime">verified</span>
+            Mabadi Khaira Ummah
+          </div>
+<div class="bg-surface-base/10 backdrop-blur-xs px-3 py-1.5 rounded-md border border-surface-base/20 flex items-center gap-1.5 text-xs font-medium">
+<span class="material-symbols-outlined text-sm text-accent-lime">balance</span>
+            Tawassuth &amp; I'tidal
+          </div>
+</div>
+<!-- 4 Key Statistics Cards (2x2 Grid) -->
+<div class="grid grid-cols-2 gap-space-8 relative z-10 pt-2">
+<!-- Stat 1 -->
+<div class="bg-surface-base text-text-primary rounded-xl p-space-16 border border-border-light flex flex-col shadow-sm">
+<span class="font-headline-lg-mobile text-2xl font-bold text-brand-primary">14</span>
+<span class="font-title-md text-xs font-bold mt-0.5 leading-tight">Pengurus Ranting</span>
+<span class="font-caption text-[10px] text-text-muted mt-1">Aktif di Seluruh Desa</span>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-base text-text-primary rounded-xl p-space-16 border border-border-light flex flex-col shadow-sm">
+<span class="font-headline-lg-mobile text-2xl font-bold text-brand-primary">6</span>
+<span class="font-title-md text-xs font-bold mt-0.5 leading-tight">Badan Otonom</span>
+<span class="font-caption text-[10px] text-text-muted mt-1">Kaderisasi Terintegrasi</span>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-base text-text-primary rounded-xl p-space-16 border border-border-light flex flex-col shadow-sm">
+<span class="font-headline-lg-mobile text-2xl font-bold text-brand-primary">25+</span>
+<span class="font-title-md text-xs font-bold mt-0.5 leading-tight">Lembaga Khidmat</span>
+<span class="font-caption text-[10px] text-text-muted mt-1">Pendidikan &amp; Filantropi</span>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-base text-text-primary rounded-xl p-space-16 border border-border-light flex flex-col shadow-sm">
+<span class="font-headline-lg-mobile text-2xl font-bold text-brand-primary">12.000+</span>
+<span class="font-title-md text-xs font-bold mt-0.5 leading-tight">Warga Nahdliyin</span>
+<span class="font-caption text-[10px] text-text-muted mt-1">Kader Terdata Digital</span>
+</div>
+</div>
+</section>
+<!-- Member Portal Teaser (Metaphorical Physical Card Preview) -->
+<section class="px-gutter-mobile flex flex-col gap-3" id="portal-anggota">
+<div class="bg-surface-container rounded-2xl p-space-16 border border-border-subtle flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span>
+<span class="font-label-sm text-xs text-brand-primary font-bold uppercase tracking-wider">KTA Digital Nahdliyin</span>
+</div>
+<span class="font-caption text-[10px] bg-surface-base px-2 py-0.5 rounded-full border border-border-light text-text-secondary">
+              E-Khidmat 2025
+            </span>
+</div>
+<p class="font-body-sm text-xs text-text-secondary leading-normal">
+            Bagi kader IPNU, IPPNU, GP Ansor, Banser, Fatayat, dan Muslimat, akses kartu tanda anggota dan layanan internal melalui Portal Anggota resmi.
+          </p>
+<a class="h-11 w-full bg-brand-primary text-surface-base font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 shadow-sm hover:bg-brand-primary-hover active:scale-[0.98] transition-all" href="#portal">
+<span class="material-symbols-outlined text-lg">fingerprint</span>
+<span>Masuk ke Portal Anggota</span>
+</a>
+</div>
+</section>
+</main>
+<!-- ================================================================= -->
+<!-- 8. COMPREHENSIVE MOBILE FOOTER (Shared Component Anchor) -->
+<!-- ================================================================= -->
+<footer class="w-full bg-surface-container border-t border-border-subtle px-gutter-mobile py-space-32 flex flex-col gap-space-24 mt-space-32">
+<!-- Institutional Identity Block -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-md bg-brand-primary flex items-center justify-center text-surface-base font-bold text-sm">
+            NU
+          </div>
+<span class="font-headline-sm text-headline-sm font-semibold text-brand-primary tracking-tight">MWC NU Kecamatan</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+          Sekretariat Gedung Bersama MWC NU Kecamatan, Jl. Raya Kyai Hasyim Asy'ari No. 09, Jawa Timur, Indonesia.
+        </p>
+<p class="font-caption text-caption text-text-muted">
+          Telepon/WhatsApp: +62 812-3456-7890 • Email: sekretariat@mwcnu-kecamatan.or.id
+        </p>
+</div>
+<!-- Links Grid -->
+<div class="grid grid-cols-2 gap-space-16 border-y border-border-light py-space-16">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-xs font-bold text-brand-primary uppercase tracking-wider">Kelembagaan</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-xs text-text-secondary">
+<li><a class="hover:text-brand-primary" href="#tentang">Tentang MWC NU</a></li>
+<li><a class="hover:text-brand-primary" href="#struktur">Struktur Pengurus</a></li>
+<li><a class="hover:text-brand-primary" href="#banom">Lembaga &amp; Banom</a></li>
+<li><a class="hover:text-brand-primary" href="#transparansi">Transparansi Program</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-xs font-bold text-brand-primary uppercase tracking-wider">Layanan Warga</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-xs text-text-secondary">
+<li><a class="hover:text-brand-primary" href="#warta">Warta &amp; Berita</a></li>
+<li><a class="hover:text-brand-primary" href="#agenda">Agenda Kegiatan</a></li>
+<li><a class="hover:text-brand-primary" href="#kebijakan">Kebijakan Privasi</a></li>
+<li><a class="hover:text-brand-primary" href="#kontak">Kontak Sekretariat</a></li>
+</ul>
+</div>
+</div>
+<!-- Official System Status Badge -->
+<div class="flex items-center gap-2 bg-surface-base p-2.5 rounded-lg border border-border-light text-xs text-text-secondary">
+<span class="w-2 h-2 rounded-full bg-status-success animate-ping"></span>
+<span>Sistem Informasi Terpadu Jam'iyyah MWC NU Aktif</span>
+</div>
+<!-- Mandatory Shared Copyright Text -->
+<div class="text-center font-caption text-[11px] text-text-muted leading-relaxed">
+        © 2025 Majelis Wakil Cabang Nahdlatul Ulama (MWC NU) Kecamatan. Hak Cipta Dilindungi Undang-Undang. Khidmat untuk Umat dan Bangsa.
+      </div>
+</footer>
+<!-- ================================================================= -->
+<!-- STICKY MOBILE QUICK BAR (Semantic Bottom Action Shell) -->
+<!-- ================================================================= -->
+<aside class="sticky bottom-0 z-40 w-full bg-surface-base/95 backdrop-blur-md border-t border-border-light px-space-16 py-2 flex items-center justify-around shadow-lg">
+<a class="flex flex-col items-center justify-center w-14 h-11 text-brand-primary font-semibold" href="#beranda">
+<span class="material-symbols-outlined text-[20px]">home</span>
+<span class="text-[10px] leading-tight mt-0.5">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-11 text-text-secondary hover:text-brand-primary transition-colors" href="#berita">
+<span class="material-symbols-outlined text-[20px]">feed</span>
+<span class="text-[10px] leading-tight mt-0.5">Berita</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-11 text-text-secondary hover:text-brand-primary transition-colors" href="#kegiatan">
+<span class="material-symbols-outlined text-[20px]">event</span>
+<span class="text-[10px] leading-tight mt-0.5">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-11 text-text-secondary hover:text-brand-primary transition-colors" href="#banom">
+<span class="material-symbols-outlined text-[20px]">group_work</span>
+<span class="text-[10px] leading-tight mt-0.5">Banom</span>
+</a>
+<a class="flex flex-col items-center justify-center w-14 h-11 text-text-secondary hover:text-brand-primary transition-colors" href="#portal-anggota">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span class="text-[10px] leading-tight mt-0.5">KTA</span>
+</a>
+</aside>
+</div>
+<!-- Inline Interaction Logic -->
+<script>
+    // Simple toggle for mobile navigation drawer
+    const menuBtn = document.getElementById('menu-btn');
+    const drawer = document.getElementById('mobile-drawer');
+
+    if (menuBtn && drawer) {
+      menuBtn.addEventListener('click', () => {
+        const isHidden = drawer.classList.contains('hidden');
+        if (isHidden) {
+          drawer.classList.remove('hidden');
+          menuBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">close</span>';
+        } else {
+          drawer.classList.add('hidden');
+          menuBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">menu</span>';
+        }
+      });
+
+      // Close menu when clicking drawer links
+      drawer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          drawer.classList.add('hidden');
+          menuBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">menu</span>';
+        });
+      });
+    }
+  </script>
+</body></html>

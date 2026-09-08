@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Administrasi &amp; Pelayanan MWC NU Kecamatan</title>
+<!-- Google Fonts: Newsreader & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "brand-secondary": "#77DD77",
+            "primary-fixed": "#9ff4cf",
+            "on-tertiary-fixed": "#002020",
+            "on-primary-fixed": "#002116",
+            "brand-primary": "#1C775A",
+            "secondary-fixed-dim": "#77dd77",
+            "on-tertiary": "#ffffff",
+            "error-container": "#ffdad6",
+            "accent-lime": "#BFFF00",
+            "on-tertiary-container": "#acf7f8",
+            "inverse-primary": "#83d7b4",
+            "surface-warm": "#FAFAFA",
+            "primary-fixed-dim": "#83d7b4",
+            "tertiary-fixed": "#a4f0f1",
+            "border-subtle": "#CFD0C3",
+            "surface-container-high": "#e8e9dc",
+            "tertiary-fixed-dim": "#88d3d4",
+            "secondary-fixed": "#92fa90",
+            "surface-card": "#FFFFFF",
+            "brand-secondary-hover": "#5FC85F",
+            "on-primary-container": "#a6fbd7",
+            "secondary": "#006e1d",
+            "tertiary": "#005b5c",
+            "on-tertiary-fixed-variant": "#004f51",
+            "status-warning": "#B7791F",
+            "outline-variant": "#bec9c2",
+            "surface-variant": "#e3e3d6",
+            "background": "#fafaed",
+            "on-secondary-container": "#007520",
+            "status-danger-bg": "#FDE8E8",
+            "on-primary-fixed-variant": "#00513b",
+            "accent-cyan-subtle": "#EBF8F8",
+            "on-secondary-fixed": "#002204",
+            "primary-container": "#1c775a",
+            "inverse-on-surface": "#f1f2e4",
+            "brand-primary-hover": "#165F48",
+            "on-background": "#1a1c14",
+            "border-light": "#E2E4DC",
+            "primary": "#005d44",
+            "border-focus": "#1C775A",
+            "text-primary": "#1A201C",
+            "on-error": "#ffffff",
+            "surface-container": "#eeefe1",
+            "on-surface-variant": "#3f4944",
+            "on-error-container": "#93000a",
+            "text-muted": "#7B847F",
+            "on-secondary": "#ffffff",
+            "surface-tint": "#056c4f",
+            "inverse-surface": "#2f3128",
+            "surface": "#fafaed",
+            "tertiary-container": "#237475",
+            "on-surface": "#1a1c14",
+            "status-success": "#1E7E34",
+            "on-primary": "#ffffff",
+            "brand-primary-light": "#E8F4F0",
+            "secondary-container": "#92fa90",
+            "outline": "#6f7a73",
+            "status-danger": "#C53030",
+            "surface-container-low": "#f4f5e7",
+            "text-secondary": "#5B635E",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "status-success-bg": "#E9F7EF",
+            "status-warning-bg": "#FEF9E7",
+            "on-secondary-fixed-variant": "#005314",
+            "surface-base": "#FFFFFF",
+            "surface-dim": "#dadbce",
+            "accent-cyan": "#94DFE0",
+            "surface-container-highest": "#e3e3d6",
+            "surface-bright": "#fafaed"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-tablet": "24px",
+            "space-96": "96px",
+            "space-56": "56px",
+            "space-24": "24px",
+            "container-max-public": "1280px",
+            "space-48": "48px",
+            "space-16": "16px",
+            "space-32": "32px",
+            "space-40": "40px",
+            "space-64": "64px",
+            "space-8": "8px",
+            "gutter-mobile": "16px",
+            "container-max-admin": "1440px",
+            "gutter-desktop": "32px",
+            "space-80": "80px"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md-mobile": ["Newsreader"],
+            "headline-lg-mobile": ["Newsreader"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "headline-lg": ["Newsreader"],
+            "display-hero": ["Newsreader"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Newsreader"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "caption": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAFAFA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CFD0C3;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1C775A;
+    }
+  </style>
+</head>
+<body class="bg-surface-warm text-text-primary antialiased min-h-screen flex flex-row">
+<!-- ========================================================================= -->
+<!-- 1. SIDEBAR NAVIGATION (Component: SideNavBar from Shared Components JSON) -->
+<!-- ========================================================================= -->
+<aside class="fixed top-0 left-0 h-screen w-64 border-r bg-surface-card border-border-subtle shadow-sm flex flex-col justify-between p-space-16 z-30">
+<div class="flex flex-col h-full overflow-y-auto pr-1">
+<!-- Brand & Header -->
+<div class="flex items-center gap-space-16 pb-space-16 border-b border-border-light">
+<div aria-label="Lambang Resmi Nahdlatul Ulama MWC Kecamatan" class="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm">
+<!-- Official NU Symbolic Emblem Placeholder (Geometric Star & Globe) -->
+<span class="material-symbols-outlined text-[24px]">public</span>
+</div>
+<div class="flex flex-col">
+<span class="text-title-lg font-title-lg font-bold text-brand-primary tracking-tight">MWC NU</span>
+<span class="text-caption font-caption text-text-secondary">Kecamatan Portal Administrasi</span>
+</div>
+</div>
+<!-- Quick Action CTA inside SideNavBar -->
+<div class="pt-space-16 pb-space-8">
+<button class="w-full flex items-center justify-center gap-space-8 px-space-16 py-space-8 rounded-lg bg-brand-primary text-on-primary text-label-md font-label-md hover:bg-brand-primary-hover active:scale-[0.98] transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Buat Kegiatan</span>
+</button>
+</div>
+<!-- Nav Section: IKHTISAR -->
+<div class="mt-space-8">
+<p class="px-space-8 text-caption font-caption text-text-muted tracking-wider uppercase mb-space-8">Ikhtisar</p>
+<nav class="space-y-1">
+<!-- Active: Overview -->
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg bg-brand-primary-light text-brand-primary font-label-md text-label-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px] fill-icon">dashboard</span>
+<span>Overview</span>
+</a>
+</nav>
+</div>
+<!-- Nav Section: KONTEN & PUBLIKASI -->
+<div class="mt-space-16">
+<p class="px-space-8 text-caption font-caption text-text-muted tracking-wider uppercase mb-space-8">Konten &amp; Publikasi</p>
+<nav class="space-y-1">
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">newspaper</span>
+<span>Warta &amp; Berita</span>
+</a>
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">event</span>
+<span>Kegiatan &amp; Agenda</span>
+</a>
+</nav>
+</div>
+<!-- Nav Section: KEANGGOTAAN & KADER -->
+<div class="mt-space-16">
+<p class="px-space-8 text-caption font-caption text-text-muted tracking-wider uppercase mb-space-8">Keanggotaan &amp; Kader</p>
+<nav class="space-y-1">
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="flex-1">Anggota &amp; Kader</span>
+</a>
+<a class="flex items-center justify-between px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<div class="flex items-center gap-space-8">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Verifikasi KTA</span>
+</div>
+<span class="px-space-8 py-0.5 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/30 font-semibold">8</span>
+</a>
+</nav>
+</div>
+<!-- Nav Section: STRUKTURAL BANOM -->
+<div class="mt-space-16">
+<p class="px-space-8 text-caption font-caption text-text-muted tracking-wider uppercase mb-space-8">Struktural</p>
+<nav class="space-y-1">
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+<span>6 Badan Otonom</span>
+</a>
+</nav>
+</div>
+<!-- Nav Section: PENGATURAN -->
+<div class="mt-space-16">
+<p class="px-space-8 text-caption font-caption text-text-muted tracking-wider uppercase mb-space-8">Administrasi</p>
+<nav class="space-y-1">
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-text-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span>Pengaturan Sekretariat</span>
+</a>
+</nav>
+</div>
+<!-- Footer Section inside SideNav -->
+<div class="mt-auto pt-space-24 border-t border-border-light space-y-1">
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
+<span>Bantuan</span>
+</a>
+<a class="flex items-center gap-space-8 px-space-16 py-space-8 rounded-lg text-text-secondary hover:text-status-danger hover:bg-status-danger-bg font-body-md text-body-md transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>Keluar</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CONTAINER (Pushed right by w-64) -->
+<!-- ========================================================================= -->
+<div class="ml-64 flex-1 flex flex-col min-h-screen bg-surface-warm">
+<!-- ========================================================================= -->
+<!-- TOP APP BAR (Component: TopNavBar from Shared Components JSON) -->
+<!-- ========================================================================= -->
+<header class="sticky top-0 z-20 bg-surface-card border-b border-border-light shadow-sm">
+<div class="flex justify-between items-center w-full px-space-24 h-space-56 max-w-container-max-admin mx-auto">
+<!-- Left: Search Bar with on_left search logic -->
+<div class="flex items-center gap-space-16 w-96">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 flex items-center pl-space-16 pointer-events-none text-text-muted">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<input class="w-full h-9 pl-10 pr-space-16 bg-surface-warm border border-border-subtle rounded-lg text-body-sm font-body-sm text-text-primary placeholder:text-text-muted focus:border-border-focus focus:ring-2 focus:ring-brand-primary/10 transition-colors" placeholder="Cari NIK, Anggota, Warta, Berkas KTA..." type="search"/>
+</div>
+</div>
+<!-- Center: Date Indicator & Jam'iyyah Server Status -->
+<div class="hidden xl:flex items-center gap-space-16">
+<div class="flex items-center gap-space-8 px-space-16 py-1 bg-surface-warm border border-border-light rounded-full text-caption font-caption text-text-secondary">
+<span class="material-symbols-outlined text-[16px] text-brand-primary">calendar_month</span>
+<span>Rabu, 14 Mei 2025 • 16 Dzulqa'dah 1446 H</span>
+</div>
+<div class="flex items-center gap-2 px-space-16 py-1 bg-status-success-bg border border-status-success/30 rounded-full text-caption font-caption text-status-success font-medium">
+<span class="w-2 h-2 rounded-full bg-accent-lime inline-block animate-pulse"></span>
+<span>Server Jam'iyyah Online</span>
+</div>
+</div>
+<!-- Right: Actions & Admin Profile -->
+<div class="flex items-center gap-space-16">
+<!-- Trailing Icon Actions -->
+<div class="flex items-center gap-1 border-r border-border-light pr-space-16">
+<button class="relative p-2 rounded-lg text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light transition-colors active:scale-95" title="Notifikasi Sistem" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-status-danger"></span>
+</button>
+<button class="p-2 rounded-lg text-text-secondary hover:text-brand-primary hover:bg-brand-primary-light transition-colors active:scale-95" title="Pusat Bantuan &amp; Dokumentasi" type="button">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+</div>
+<!-- Profile Badge Dropdown Trigger -->
+<div class="flex items-center gap-space-16 cursor-pointer group">
+<div class="w-9 h-9 rounded-full bg-brand-primary-light border border-border-subtle flex items-center justify-center text-brand-primary font-bold text-label-md" title="Foto profil Sekretaris MWC NU">
+<span class="material-symbols-outlined text-[20px]">account_circle</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="text-label-md font-label-md text-text-primary group-hover:text-brand-primary transition-colors">K.H. Ahmad Suhaimi</span>
+<span class="text-caption font-caption text-text-secondary">Sekretaris MWC NU</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-brand-primary">expand_more</span>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN DASHBOARD CONTENT AREA -->
+<!-- ========================================================================= -->
+<main class="flex-1 px-space-32 py-space-32 max-w-container-max-admin mx-auto w-full">
+<!-- ========================================================================= -->
+<!-- 2. DASHBOARD HEADER BANNER -->
+<!-- ========================================================================= -->
+<section class="bg-surface-card border border-border-subtle rounded-xl p-space-32 mb-space-32 shadow-sm relative overflow-hidden">
+<!-- Subtle Institutional Islamic Arch Watermark Vector Motif -->
+<div class="absolute -right-8 -bottom-10 opacity-[0.04] pointer-events-none select-none text-brand-primary">
+<span class="material-symbols-outlined text-[240px]">mosque</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-24 relative z-10">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-8 mb-space-8">
+<span class="px-space-8 py-0.5 rounded-full bg-brand-primary-light text-brand-primary text-label-sm font-label-sm border border-brand-primary/20">Portal Terpadu Wilayah</span>
+<span class="text-caption font-caption text-text-muted">• SISLOG Administrasi Mandiri</span>
+</div>
+<h1 class="text-headline-md font-headline-md text-text-primary tracking-tight">
+              Dashboard Administrasi &amp; Pelayanan MWC NU
+            </h1>
+<p class="text-body-md font-body-md text-text-secondary mt-space-8 leading-relaxed">
+              Pusat tata kelola keorganisasian, warta dakwah, verifikasi KTA digital, dan koordinasi 6 Badan Otonom se-Kecamatan.
+            </p>
+</div>
+<!-- Quick Actions CTA Group -->
+<div class="flex flex-wrap items-center gap-space-16 flex-shrink-0">
+<button class="h-11 px-space-24 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-md font-label-md flex items-center gap-space-8 transition-colors shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span>+ Tambah Warta Baru</span>
+</button>
+<button class="h-11 px-space-24 rounded-lg bg-surface-card border-1.5 border-brand-primary text-brand-primary hover:bg-brand-primary-light text-label-md font-label-md flex items-center gap-space-8 transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+<span>+ Buat Agenda Kegiatan</span>
+</button>
+<button class="h-11 px-space-24 rounded-lg bg-surface-warm border border-border-subtle hover:border-brand-primary text-text-primary text-label-md font-label-md flex items-center gap-space-8 transition-colors shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px] text-brand-primary">verified_user</span>
+<span>Verifikasi KTA</span>
+<span class="px-2 py-0.5 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-bold">8 Menunggu</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. KEY STATISTICS GRID (5 KPI Cards) -->
+<!-- ========================================================================= -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-16 mb-space-32">
+<!-- KPI 1: Anggota -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-space-24 shadow-sm hover:border-brand-primary/40 transition-colors">
+<div class="flex items-center justify-between text-text-secondary mb-space-16">
+<span class="text-label-sm font-label-sm">Total Anggota &amp; Kader</span>
+<div class="w-8 h-8 rounded-lg bg-brand-primary-light flex items-center justify-center text-brand-primary">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-text-primary tracking-tight">12.480</div>
+<div class="mt-space-8 flex items-center gap-1.5 text-caption font-caption text-status-success font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+142 kader bulan ini</span>
+</div>
+</div>
+<!-- KPI 2: Verifikasi KTA -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-space-24 shadow-sm hover:border-status-warning transition-colors relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-status-warning"></div>
+<div class="flex items-center justify-between text-text-secondary mb-space-16">
+<span class="text-label-sm font-label-sm">Verifikasi KTA Tertunda</span>
+<div class="w-8 h-8 rounded-lg bg-status-warning-bg flex items-center justify-center text-status-warning">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-status-warning tracking-tight">8 Berkas</div>
+<div class="mt-space-8 flex items-center gap-1.5 text-caption font-caption text-text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+<span>Perlu ditinjau segera</span>
+</div>
+</div>
+<!-- KPI 3: Warta Terpublikasi -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-space-24 shadow-sm hover:border-brand-primary/40 transition-colors">
+<div class="flex items-center justify-between text-text-secondary mb-space-16">
+<span class="text-label-sm font-label-sm">Warta Terpublikasi</span>
+<div class="w-8 h-8 rounded-lg bg-brand-primary-light flex items-center justify-center text-brand-primary">
+<span class="material-symbols-outlined text-[18px]">article</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-text-primary tracking-tight">48 Artikel</div>
+<div class="mt-space-8 flex items-center gap-1.5 text-caption font-caption text-text-secondary">
+<span class="text-text-muted">3 draft tersimpan</span>
+</div>
+</div>
+<!-- KPI 4: Agenda Kegiatan -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-space-24 shadow-sm hover:border-brand-primary/40 transition-colors">
+<div class="flex items-center justify-between text-text-secondary mb-space-16">
+<span class="text-label-sm font-label-sm">Agenda Kegiatan Aktif</span>
+<div class="w-8 h-8 rounded-lg bg-accent-cyan-subtle flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-text-primary tracking-tight">14 Agenda</div>
+<div class="mt-space-8 flex items-center gap-1.5 text-caption font-caption text-text-secondary">
+<span>4 Khusus Banom • 10 Publik</span>
+</div>
+</div>
+<!-- KPI 5: Ranting & Banom -->
+<div class="bg-surface-card border border-border-subtle rounded-xl p-space-24 shadow-sm hover:border-brand-primary/40 transition-colors">
+<div class="flex items-center justify-between text-text-secondary mb-space-16">
+<span class="text-label-sm font-label-sm">Ranting &amp; Banom Aktif</span>
+<div class="w-8 h-8 rounded-lg bg-status-success-bg flex items-center justify-center text-status-success">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+</div>
+</div>
+<div class="text-headline-md font-headline-md text-text-primary tracking-tight">14 / 6 Banom</div>
+<div class="mt-space-8 flex items-center gap-1.5 text-caption font-caption text-status-success font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>100% Laporan Tersinkron</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. PROMINENT MEMBER REGISTRATION REVIEW SECTION -->
+<!-- ========================================================================= -->
+<section class="bg-surface-card border border-border-subtle rounded-xl shadow-sm mb-space-32 overflow-hidden">
+<!-- Table Header Bar -->
+<div class="p-space-24 border-b border-border-light flex flex-col sm:flex-row sm:items-center justify-between gap-space-16 bg-surface-card">
+<div>
+<div class="flex items-center gap-space-8">
+<h2 class="text-title-lg font-title-lg text-text-primary">Verifikasi Pendaftaran KTA Kader Baru</h2>
+<span class="px-space-8 py-0.5 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-semibold">8 Menunggu Persetujuan</span>
+</div>
+<p class="text-body-sm font-body-sm text-text-secondary mt-1">Daftar permohonan Kartu Tanda Anggota digital dari ranting desa dan badan otonom.</p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md text-brand-primary hover:text-brand-primary-hover hover:underline self-start sm:self-auto" href="#">
+<span>Lihat Semua Pendaftaran</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-warm border-b border-border-subtle">
+<th class="py-space-16 px-space-24 text-label-sm font-label-sm text-text-secondary uppercase tracking-wider">Kader / Calon Anggota</th>
+<th class="py-space-16 px-space-16 text-label-sm font-label-sm text-text-secondary uppercase tracking-wider">Banom &amp; Ranting</th>
+<th class="py-space-16 px-space-16 text-label-sm font-label-sm text-text-secondary uppercase tracking-wider">Waktu Masuk</th>
+<th class="py-space-16 px-space-16 text-label-sm font-label-sm text-text-secondary uppercase tracking-wider">Status Validasi</th>
+<th class="py-space-16 px-space-24 text-label-sm font-label-sm text-text-secondary uppercase tracking-wider text-right">Aksi Keputusan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-light font-body-md text-body-md">
+<!-- Row 1: Nur Hidayati -->
+<tr class="hover:bg-surface-warm/80 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-text-secondary border border-border-subtle flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md">Nur Hidayati, S.Pd.</div>
+<div class="text-caption font-caption text-text-muted">NIK: 330214••••••••18 • Calon NIA: NU-2505-0982</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16">
+<div class="flex flex-col items-start gap-1">
+<span class="px-3 py-1 rounded-full text-caption font-caption bg-surface-warm text-text-primary border border-border-subtle font-medium">Fatayat NU</span>
+<span class="text-caption font-caption text-text-secondary">Ranting Sukamaju</span>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-body-sm font-body-sm text-text-secondary">
+<div>14 Mei 2025</div>
+<div class="text-caption font-caption text-text-muted">09:15 WIB</div>
+</td>
+<td class="py-space-16 px-space-16">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+                    Menunggu Verifikasi
+                  </span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-2 justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-sm font-label-sm transition-colors shadow-sm" type="button">
+                      Setujui &amp; Terbitkan KTA
+                    </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary text-label-sm font-label-sm transition-colors" type="button">
+                      Tinjau Berkas
+                    </button>
+<button class="p-1.5 rounded-lg text-text-muted hover:text-status-danger hover:bg-status-danger-bg transition-colors" title="Tolak Berkas" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: M. Wildan Prasetyo -->
+<tr class="hover:bg-surface-warm/80 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-text-secondary border border-border-subtle flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md">M. Wildan Prasetyo</div>
+<div class="text-caption font-caption text-text-muted">NIK: 330214••••••••44 • Calon NIA: NU-2505-0981</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16">
+<div class="flex flex-col items-start gap-1">
+<span class="px-3 py-1 rounded-full text-caption font-caption bg-brand-primary-light text-brand-primary border border-brand-secondary font-medium">GP Ansor / Banser</span>
+<span class="text-caption font-caption text-text-secondary">Ranting Karanganyar</span>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-body-sm font-body-sm text-text-secondary">
+<div>13 Mei 2025</div>
+<div class="text-caption font-caption text-text-muted">16:40 WIB</div>
+</td>
+<td class="py-space-16 px-space-16">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+                    Menunggu Verifikasi
+                  </span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-2 justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-sm font-label-sm transition-colors shadow-sm" type="button">
+                      Setujui &amp; Terbitkan KTA
+                    </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary text-label-sm font-label-sm transition-colors" type="button">
+                      Tinjau Berkas
+                    </button>
+<button class="p-1.5 rounded-lg text-text-muted hover:text-status-danger hover:bg-status-danger-bg transition-colors" title="Tolak Berkas" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Siti Maryam -->
+<tr class="hover:bg-surface-warm/80 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-text-secondary border border-border-subtle flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md">Siti Maryam</div>
+<div class="text-caption font-caption text-text-muted">NIK: 330214••••••••11 • Calon NIA: NU-2505-0980</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16">
+<div class="flex flex-col items-start gap-1">
+<span class="px-3 py-1 rounded-full text-caption font-caption bg-accent-cyan-subtle text-tertiary border border-accent-cyan font-medium">IPPNU Pelajar</span>
+<span class="text-caption font-caption text-text-secondary">Ranting Kedungbanteng</span>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-body-sm font-body-sm text-text-secondary">
+<div>13 Mei 2025</div>
+<div class="text-caption font-caption text-text-muted">11:20 WIB</div>
+</td>
+<td class="py-space-16 px-space-16">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+                    Menunggu Verifikasi
+                  </span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-2 justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-sm font-label-sm transition-colors shadow-sm" type="button">
+                      Setujui &amp; Terbitkan KTA
+                    </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary text-label-sm font-label-sm transition-colors" type="button">
+                      Tinjau Berkas
+                    </button>
+<button class="p-1.5 rounded-lg text-text-muted hover:text-status-danger hover:bg-status-danger-bg transition-colors" title="Tolak Berkas" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Ahmad Sholihin -->
+<tr class="hover:bg-surface-warm/80 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-text-secondary border border-border-subtle flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md">Ahmad Sholihin</div>
+<div class="text-caption font-caption text-text-muted">NIK: 330214••••••••72 • Calon NIA: NU-2505-0979</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16">
+<div class="flex flex-col items-start gap-1">
+<span class="px-3 py-1 rounded-full text-caption font-caption bg-brand-primary-light text-brand-primary border border-brand-secondary font-medium">GP Ansor</span>
+<span class="text-caption font-caption text-text-secondary">Ranting Tanjung</span>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-body-sm font-body-sm text-text-secondary">
+<div>12 Mei 2025</div>
+<div class="text-caption font-caption text-text-muted">20:05 WIB</div>
+</td>
+<td class="py-space-16 px-space-16">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning"></span>
+                    Menunggu Verifikasi
+                  </span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-2 justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-sm font-label-sm transition-colors shadow-sm" type="button">
+                      Setujui &amp; Terbitkan KTA
+                    </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-card border border-border-subtle hover:bg-surface-warm text-text-primary text-label-sm font-label-sm transition-colors" type="button">
+                      Tinjau Berkas
+                    </button>
+<button class="p-1.5 rounded-lg text-text-muted hover:text-status-danger hover:bg-status-danger-bg transition-colors" title="Tolak Berkas" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-16 bg-surface-warm/50 border-t border-border-light flex items-center justify-between text-body-sm font-body-sm text-text-secondary">
+<span>Menampilkan 4 dari 8 berkas yang memerlukan persetujuan manual tingkat kecamatan</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded border border-border-subtle bg-surface-card text-text-muted hover:text-text-primary disabled:opacity-50" disabled="" type="button">Sebelumnya</button>
+<span class="px-2 font-medium text-text-primary">1</span>
+<button class="px-3 py-1 rounded border border-border-subtle bg-surface-card hover:bg-surface-warm text-text-primary" type="button">Selanjutnya</button>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. TWO-COLUMN OPERATIONAL LAYOUT -->
+<!-- ========================================================================= -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-32">
+<!-- LEFT COLUMN: Warta & Berita Management & Drafts (7 Cols) -->
+<div class="lg:col-span-7 space-y-space-32">
+<div class="bg-surface-card border border-border-subtle rounded-xl shadow-sm overflow-hidden">
+<!-- Card Header & Filter Tabs -->
+<div class="p-space-24 border-b border-border-light flex flex-col sm:flex-row sm:items-center justify-between gap-space-16">
+<div>
+<h2 class="text-title-lg font-title-lg text-text-primary">Manajemen Publikasi Warta</h2>
+<p class="text-body-sm font-body-sm text-text-secondary mt-0.5">Pantauan berita dakwah, rilis resmi MWC, dan buletin Lembaga Ta'lif wan Nasyr (LTN NU).</p>
+</div>
+<button class="h-9 px-space-16 rounded-lg bg-brand-primary hover:bg-brand-primary-hover text-on-primary text-label-sm font-label-sm flex items-center gap-1.5 transition-colors self-start sm:self-auto" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Tulis Artikel</span>
+</button>
+</div>
+<!-- Tab Pills -->
+<div class="px-space-24 pt-space-16 pb-0 flex items-center gap-space-16 border-b border-border-light bg-surface-card">
+<button class="pb-space-16 border-b-2 border-brand-primary text-brand-primary text-label-md font-label-md flex items-center gap-1.5" type="button">
+<span>Semua</span>
+<span class="px-2 py-0.5 rounded-full text-caption bg-brand-primary-light text-brand-primary">48</span>
+</button>
+<button class="pb-space-16 border-b-2 border-transparent text-text-secondary hover:text-text-primary text-label-md font-label-md flex items-center gap-1.5" type="button">
+<span>Terbit</span>
+<span class="px-2 py-0.5 rounded-full text-caption bg-surface-warm text-text-secondary">45</span>
+</button>
+<button class="pb-space-16 border-b-2 border-transparent text-text-secondary hover:text-text-primary text-label-md font-label-md flex items-center gap-1.5" type="button">
+<span>Draft</span>
+<span class="px-2 py-0.5 rounded-full text-caption bg-status-warning-bg text-status-warning">3</span>
+</button>
+</div>
+<!-- News List Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-warm border-b border-border-subtle text-caption font-caption text-text-secondary uppercase tracking-wider">
+<th class="py-3 px-space-24">Judul Warta &amp; Rubrik</th>
+<th class="py-3 px-space-16">Penulis / Redaksi</th>
+<th class="py-3 px-space-16">Tanggal</th>
+<th class="py-3 px-space-16">Status</th>
+<th class="py-3 px-space-24 text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-light text-body-sm font-body-sm">
+<!-- News Item 1 -->
+<tr class="hover:bg-surface-warm/60 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<!-- Geometric Placeholder Thumbnail -->
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-border-subtle flex items-center justify-center flex-shrink-0 text-text-muted">
+<span class="material-symbols-outlined text-[20px]">image</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md line-clamp-1 hover:text-brand-primary cursor-pointer">
+                            Hasil Bahtsul Masail Ramadhan: Fiqih Zakat Pertanian Modern
+                          </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-caption font-caption text-brand-primary font-medium">Bahtsul Masail</span>
+<span class="text-caption font-caption text-text-muted">• 1.420 pembaca</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-text-secondary">LBM &amp; LTN MWC</td>
+<td class="py-space-16 px-space-16 text-text-muted">14 Mei 2025</td>
+<td class="py-space-16 px-space-16">
+<span class="px-2.5 py-0.5 rounded-full text-caption font-caption bg-status-success-bg text-status-success border border-status-success/40 font-medium">Terbit</span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-1 text-text-secondary">
+<button class="p-1 hover:text-brand-primary rounded" title="Edit Artikel" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-brand-primary rounded" title="Lihat Pratinjau" type="button"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="p-1 hover:text-status-danger rounded" title="Arsipkan" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- News Item 2 -->
+<tr class="hover:bg-surface-warm/60 transition-colors">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-border-subtle flex items-center justify-center flex-shrink-0 text-text-muted">
+<span class="material-symbols-outlined text-[20px]">image</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md line-clamp-1 hover:text-brand-primary cursor-pointer">
+                            Silaturahim Syawal dan Rapat Koordinasi 14 Pengurus Ranting
+                          </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-caption font-caption text-tertiary font-medium">Keorganisasian</span>
+<span class="text-caption font-caption text-text-muted">• 840 pembaca</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-text-secondary">Sekretariat MWC</td>
+<td class="py-space-16 px-space-16 text-text-muted">11 Mei 2025</td>
+<td class="py-space-16 px-space-16">
+<span class="px-2.5 py-0.5 rounded-full text-caption font-caption bg-status-success-bg text-status-success border border-status-success/40 font-medium">Terbit</span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-1 text-text-secondary">
+<button class="p-1 hover:text-brand-primary rounded" title="Edit Artikel" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-brand-primary rounded" title="Lihat Pratinjau" type="button"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="p-1 hover:text-status-danger rounded" title="Arsipkan" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- News Item 3 (Draft) -->
+<tr class="hover:bg-surface-warm/60 transition-colors bg-status-warning-bg/10">
+<td class="py-space-16 px-space-24">
+<div class="flex items-center gap-space-16">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-border-subtle flex items-center justify-center flex-shrink-0 text-status-warning">
+<span class="material-symbols-outlined text-[20px]">draft</span>
+</div>
+<div>
+<div class="font-semibold text-text-primary text-body-md line-clamp-1 hover:text-brand-primary cursor-pointer">
+                            [DRAFT] Persiapan Pelantikan Bersama PAC IPNU-IPPNU Masa Khidmat 2025-2027
+                          </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-caption font-caption text-text-muted font-medium">Pendidikan &amp; Kader</span>
+<span class="text-caption font-caption text-status-warning">• Belum rilis</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-16 px-space-16 text-text-secondary">Media IPNU</td>
+<td class="py-space-16 px-space-16 text-text-muted">13 Mei 2025</td>
+<td class="py-space-16 px-space-16">
+<span class="px-2.5 py-0.5 rounded-full text-caption font-caption bg-status-warning-bg text-status-warning border border-status-warning/40 font-medium">Draft</span>
+</td>
+<td class="py-space-16 px-space-24 text-right">
+<div class="inline-flex items-center gap-1 text-text-secondary">
+<button class="p-1 hover:text-brand-primary rounded" title="Lanjutkan Tulis" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 hover:text-brand-primary rounded" title="Pratinjau" type="button"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+<button class="p-1 hover:text-status-danger rounded" title="Hapus Draft" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer Link -->
+<div class="p-space-16 bg-surface-warm/50 border-t border-border-light text-center">
+<a class="text-label-sm font-label-sm text-brand-primary hover:underline inline-flex items-center gap-1" href="#">
+<span>Buka Seluruh Arsip Publikasi LTN NU (48 Artikel)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Koordinasi Kegiatan & 6 Badan Otonom Overview (5 Cols) -->
+<div class="lg:col-span-5 space-y-space-32">
+<!-- 6 Badan Otonom Grid Summary -->
+<div class="bg-surface-card border border-border-subtle rounded-xl shadow-sm p-space-24">
+<div class="flex items-center justify-between mb-space-16">
+<div>
+<h3 class="text-title-lg font-title-lg text-text-primary">6 Badan Otonom (Banom)</h3>
+<p class="text-caption font-caption text-text-secondary">Data sinkronisasi kader dan keaktifan ranting.</p>
+</div>
+<span class="text-caption font-caption px-2 py-0.5 rounded bg-brand-primary-light text-brand-primary font-semibold">Tersinkron</span>
+</div>
+<div class="grid grid-cols-2 gap-space-16">
+<!-- Banom 1: IPNU -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-accent-cyan transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-tertiary">IPNU</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">1.840 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">2 Agenda Terjadwal</div>
+</div>
+<!-- Banom 2: IPPNU -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-accent-cyan transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-tertiary">IPPNU</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">2.120 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">1 Agenda Terjadwal</div>
+</div>
+<!-- Banom 3: GP Ansor -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-brand-secondary transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-brand-primary">GP Ansor</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">3.250 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">3 Agenda Terjadwal</div>
+</div>
+<!-- Banom 4: Banser -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-brand-secondary transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-brand-primary">Banser</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">1.640 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">2 Agenda Terjadwal</div>
+</div>
+<!-- Banom 5: Fatayat NU -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-border-subtle transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-text-primary">Fatayat NU</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">2.910 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">2 Agenda Terjadwal</div>
+</div>
+<!-- Banom 6: Muslimat NU -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle hover:border-border-subtle transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-md font-label-md text-text-primary">Muslimat NU</span>
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+</div>
+<div class="text-title-md font-title-md text-text-primary">4.720 <span class="text-caption font-caption text-text-muted">Kader</span></div>
+<div class="text-caption font-caption text-text-secondary mt-1">4 Agenda Terjadwal</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Kegiatan & Aturan Visibilitas (Public vs Private) -->
+<div class="bg-surface-card border border-border-subtle rounded-xl shadow-sm p-space-24">
+<div class="flex items-center justify-between mb-space-16">
+<div>
+<h3 class="text-title-lg font-title-lg text-text-primary">Agenda &amp; Jadwal Terkini</h3>
+<p class="text-caption font-caption text-text-secondary">Pemisahan hak akses: Publik vs Internal Banom</p>
+</div>
+<a class="text-label-sm font-label-sm text-brand-primary hover:underline" href="#">Kelola Agenda</a>
+</div>
+<div class="space-y-space-16">
+<!-- Agenda Item 1: Private Banser -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<h4 class="text-body-md font-body-md font-semibold text-text-primary">Apel Siaga &amp; Latihan Gabungan Banser</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-caption font-caption bg-text-primary text-on-primary font-medium flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    PRIVATE: Banser
+                  </span>
+</div>
+<div class="flex items-center gap-space-16 text-caption font-caption text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 18 Mei 2025 • 07:30</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> Lapangan Kec. Barat</span>
+</div>
+</div>
+<!-- Agenda Item 2: Public Kajian Ahad -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<h4 class="text-body-md font-body-md font-semibold text-text-primary">Kajian Rutin Ahad Pagi Majelis Wakil Cabang</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-caption font-caption bg-status-success-bg text-status-success border border-status-success/30 font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">public</span>
+                    PUBLIC: Terbuka untuk Umum
+                  </span>
+</div>
+<div class="flex items-center gap-space-16 text-caption font-caption text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 21 Mei 2025 • 06:00</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> Gedung MWC NU</span>
+</div>
+</div>
+<!-- Agenda Item 3: Private Fatayat -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<h4 class="text-body-md font-body-md font-semibold text-text-primary">Konferensi Anak Cabang Fatayat NU</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-caption font-caption bg-text-primary text-on-primary font-medium flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    PRIVATE: Fatayat NU
+                  </span>
+</div>
+<div class="flex items-center gap-space-16 text-caption font-caption text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 25 Mei 2025 • 08:30</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> Aula MTs Ma'arif</span>
+</div>
+</div>
+<!-- Agenda Item 4: Private Diklatsar -->
+<div class="p-space-16 rounded-lg bg-surface-warm border border-border-subtle flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<h4 class="text-body-md font-body-md font-semibold text-text-primary">Diklatsar Banser Angkatan XXII</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-caption font-caption bg-text-primary text-on-primary font-medium flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    PRIVATE: Banser &amp; Ansor
+                  </span>
+</div>
+<div class="flex items-center gap-space-16 text-caption font-caption text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 30 Mei - 1 Jun 2025</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> Bumi Perkemahan Ranting Sukamaju</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ========================================================================= -->
+<!-- ADMIN FOOTER BAR -->
+<!-- ========================================================================= -->
+<footer class="bg-surface-card border-t border-border-light py-space-16 px-space-32 text-center text-body-sm font-body-sm text-text-secondary mt-auto">
+<div class="max-w-container-max-admin mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-8">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-brand-primary">SISLOG Terpadu MWC NU</span>
+<span>— Sistem Informasi &amp; Logistik Administrasi Jam'iyyah Nahdlatul Ulama</span>
+</div>
+<div class="text-caption font-caption text-text-muted">
+          Versi 4.2.0 • Hak Cipta © 2025 Pengurus Cabang Nahdlatul Ulama
+        </div>
+</div>
+</footer>
+</div>
+</body></html>

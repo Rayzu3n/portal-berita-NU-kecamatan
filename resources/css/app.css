@@ -1,0 +1,138 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    /* === Typography === */
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
+    --font-display: 'Newsreader', ui-serif, Georgia, serif;
+
+    /* === Brand Colors === */
+    --color-brand-primary: #1C775A;
+    --color-brand-primary-hover: #165F48;
+    --color-brand-primary-light: #E8F4F0;
+    --color-brand-secondary: #77DD77;
+    --color-brand-secondary-hover: #5FC85F;
+    --color-accent-cyan: #94DFE0;
+    --color-accent-cyan-subtle: #EBF8F8;
+    --color-accent-lime: #BFFF00;
+
+    /* === Surface Colors === */
+    --color-surface: #fafaed;
+    --color-surface-card: #FFFFFF;
+    --color-surface-tint: #F4F7F5;
+    --color-surface-warm: #FAFAFA;
+
+    /* === Text Colors === */
+    --color-text-primary: #1A201C;
+    --color-text-secondary: #5B635E;
+    --color-text-muted: #7B847F;
+
+    /* === Border Colors === */
+    --color-border-subtle: #CFD0C3;
+    --color-border-light: #E2E4DC;
+    --color-border-focus: #1C775A;
+
+    /* === Status Colors === */
+    --color-status-success: #1E7E34;
+    --color-status-success-bg: #E9F7EF;
+    --color-status-warning: #B7791F;
+    --color-status-warning-bg: #FEF9E7;
+    --color-status-danger: #C53030;
+    --color-status-danger-bg: #FDE8E8;
+
+    /* === Spacing === */
+    --spacing-space-8: 8px;
+    --spacing-space-16: 16px;
+    --spacing-space-24: 24px;
+    --spacing-space-32: 32px;
+    --spacing-space-40: 40px;
+    --spacing-space-48: 48px;
+    --spacing-space-56: 56px;
+    --spacing-space-64: 64px;
+    --spacing-space-80: 80px;
+    --spacing-space-96: 96px;
+
+    /* === Typography Scale === */
+    --text-display-hero: 48px;
+    --text-display-hero--line-height: 56px;
+    --text-display-hero-mobile: 32px;
+    --text-display-hero-mobile--line-height: 40px;
+    --text-headline-lg: 36px;
+    --text-headline-lg--line-height: 44px;
+    --text-headline-lg-mobile: 26px;
+    --text-headline-lg-mobile--line-height: 34px;
+    --text-headline-md: 28px;
+    --text-headline-md--line-height: 36px;
+    --text-headline-md-mobile: 22px;
+    --text-headline-md-mobile--line-height: 30px;
+    --text-headline-sm: 20px;
+    --text-headline-sm--line-height: 28px;
+    --text-title-lg: 18px;
+    --text-title-lg--line-height: 26px;
+    --text-title-md: 16px;
+    --text-title-md--line-height: 24px;
+    --text-body-lg: 18px;
+    --text-body-lg--line-height: 28px;
+    --text-body-md: 15px;
+    --text-body-md--line-height: 24px;
+    --text-body-sm: 13px;
+    --text-body-sm--line-height: 20px;
+    --text-label-md: 14px;
+    --text-label-md--line-height: 20px;
+    --text-label-sm: 12px;
+    --text-label-sm--line-height: 16px;
+    --text-caption: 11px;
+    --text-caption--line-height: 14px;
+}
+
+/* === Dark Mode Colors === */
+.dark {
+    --color-surface: #111512;
+    --color-surface-card: #1C221F;
+    --color-surface-tint: #161B18;
+    --color-surface-warm: #0F1311;
+    --color-text-primary: #F2F5F0;
+    --color-text-secondary: #B8C1BB;
+    --color-text-muted: #87928B;
+    --color-border-subtle: #34403A;
+    --color-border-light: #2A3530;
+    --color-brand-primary: #1C775A;
+    --color-brand-primary-hover: #24A06E;
+    --color-brand-primary-light: #1A3028;
+    --color-brand-secondary: #77DD77;
+    --color-brand-secondary-hover: #8AE88A;
+    --color-accent-cyan: #94DFE0;
+    --color-accent-cyan-subtle: #162B2C;
+    --color-status-success-bg: #0F2A18;
+    --color-status-warning-bg: #2A2210;
+    --color-status-danger-bg: #2A1010;
+}
+
+/* === Base Styles === */
+body {
+    @apply bg-surface text-text-primary font-sans antialiased;
+}
+
+::selection {
+    @apply bg-brand-primary text-white;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-border-subtle rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-primary;
+}
